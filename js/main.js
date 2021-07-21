@@ -93,7 +93,7 @@ window.onload = function () {
                 const modal = modals[i];
                 if(modal.classList.contains('_active')){
                     modal.classList.remove('_active')
-                    modal.style.transform = "translateX(-100%) skew(-10deg, -40deg)"
+                    modal.style.transform = "translateX(-120%) skew(-10deg, -40deg)"
                     document.body.classList.remove('lock')
                     document.body.style.paddingRight = '0';
                     document.querySelector('.header').style.paddingRight = '0';

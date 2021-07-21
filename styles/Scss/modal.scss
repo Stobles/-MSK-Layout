@@ -73,7 +73,7 @@
     }
 
     &__cost{
-        transform: translateX(-100%) skew(-10deg,-40deg);
+        transform: translateX(-120%) skew(-10deg,-40deg);
         &--title{
             span{
                 color: $orangeColor;
@@ -91,7 +91,7 @@
     }
 
     &__callback{
-        transform: translateX(-100%) skew(-10deg,-40deg);
+        transform: translateX(-120%) skew(-10deg,-40deg);
     }
 
     &__contacts{
