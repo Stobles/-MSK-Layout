@@ -69,55 +69,6 @@
     flex-wrap: wrap;
 }
 
-.swiper-pagination-bullet{
-    cursor: pointer;
-    flex: 0 0 27px;
-    height: 27px;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    background: none;
-    align-items: center;
-    margin: 2px 0px;
-    &:not(:last-child){
-        margin-right: 12px;
-    }
-
-    &::after{
-        content: '';
-        width: 10px;
-        height: 10px;
-        position: absolute;
-        top: 15px;
-        left: 9px;
-        transform: translateY(-50%);
-        background-color: #d8d8d8;
-        border-radius: 50%;
-        transition: background-color 0.3s ease;
-    }
-
-    &::before{
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        border-radius: 50%;
-        border: 1px solid $orangeColor;
-        transition: all .3s ease;
-        transform: scale(0);
-    }
-}
-
-.swiper-pagination-bullet-active{
-    &::after{
-        background-color: $orangeColor;
-    }
-    &::before{
-        transform: scale(1);
-    }
-}
 
 // Вспомогательные классы//
 
@@ -146,6 +97,7 @@
     @include adaptiv-value('font-size',32,20,1);
     text-align: center;
     font-weight: 700;
+    text-transform: uppercase;
     color: $maincolor;
     span{
         color: $orangeColor;
@@ -154,6 +106,7 @@
 
 .btn{
     display: inline-flex;
+    position: relative;
     @include adaptiv-value('padding-right',30,10,1);
     @include adaptiv-value('padding-left',30,10,1);
     @include adaptiv-value('padding-top',24,18,1);
@@ -163,9 +116,29 @@
     border-radius: 10px;
     text-align: center;
     font-weight: 700;
+    z-index: 1;
     color: #fff;
     background: #ff6d2f;
-    background: linear-gradient(to bottom, #ff5912, #ff996d);
+    background: linear-gradient(140.56deg, #FF5B14 10.77%, #FF7F47 97.73%);
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25);
+
+    &--helper{
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to bottom, #ff996d, #ff5912);
+        transition: all .3s ease;
+        opacity: 0;
+        border-radius: inherit;
+    }
+    @media(any-hover:hover){ 
+        &:hover &--helper{
+            opacity: 1;
+        }
+    }
 
     &__white{
         color: $orangeColor;
@@ -177,6 +150,10 @@
         }
     }
     }
+}
+
+.cat__active{
+    color: $orangeColor;
 }
 
 

@@ -11,6 +11,7 @@ $md1: 1365.98;
 $md2: 991.98; 
 $md3: 767.98; 
 $md4: 479.98; 
+$mp1: 679.98;
 
 $maincolor: #212121;
 $orangeColor: #FF5B14;
@@ -50,7 +51,14 @@ body{
     &.lock{
         overflow: hidden;
     }
-}   
+}  
+
+#map{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
 
 
 .wrapper{
@@ -79,6 +87,7 @@ body{
 @import "header.scss";
 @import "content.scss";
 @import "footer.scss";
+@import "modal.scss";
 @import "help.scss";
 
 

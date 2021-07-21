@@ -51,7 +51,7 @@
                                             <img src="img/header/Whatsapp.svg" alt="">
                                             Whatsapp
                                         </a>
-                                        <button class="contacts__callback--btn btn"><span class="contacts__callback--btn--helper"></span> Обратный звонок</button>
+                                        <button data-modal="modalCallback" class="contacts__callback--btn btn _modal__btn"><span class="contacts__callback--btn--helper"></span> Обратный звонок</button>
                                     </div>
                                 </div> 
                         </div> 
@@ -61,10 +61,10 @@
 
                         <div class="header__body--nav nav">
                             <div class="nav__items">
-                                <div class="nav__item">Главная</div>
-                                <div class="nav__item">Наши работы</div>
-                                <div class="nav__item">Стоимость</div>
-                                <div class="nav__item">Контакты</div>
+                                <button type="button" class="nav__item" data-idToScroll = "main">Главная</button>
+                                <button type="button" class="nav__item" data-idToScroll = "ourworks">Наши работы</button>
+                                <button type="button" class="nav__item" data-idToScroll = "cost">Стоимость</button>
+                                <button type="button" class="nav__item" data-idToScroll = "contacts">Контакты</button>
                             </div>
                         </div>
                     <!-- Конец Navbar -->
@@ -79,7 +79,7 @@
 
         <div class="content">
             <!-- Начало Main -->
-            <main class="content__main main">
+            <main class="content__main main" id = "main">
                 <div class="main__container container">
                     <div class="main__body">
                         <div class="main__inner">
@@ -108,7 +108,7 @@
                                 <img src="img/main/Builder.png" alt="">
                                 <div class="calc__window">
                                     <div class="calc__window--title">Рассчитайте стоимость стяжки без выезда специалиста <span>прямо сейчас</span></div>
-                                    <div class="calc__window--btn btn"><span class="calc__window--btn--helper"></span>Предварительный расчет стоимости</div>
+                                    <button data-modal="modalCost" class="calc__window--btn btn _modal__btn"><span class="calc__window--btn--helper"></span>Предварительный расчет стоимости</button>
                                 </div>
                             </div>
                         </div>
@@ -214,7 +214,7 @@
 
             <!-- Начало Services -->
 
-            <seciton class="content__services services">
+            <seciton class="content__services services" id = "cost">
                 <div class="services__container container">
                     <div class="services__inner">
                         <div class="services__title title"><span>СТОИМОСТЬ</span> ПОЛУСУХОЙ СТЯЖКИ ПОЛА</div>
@@ -326,6 +326,8 @@
             </seciton>
 
             <!-- Конец Services -->
+
+            <!-- Начало Works -->
 
             <section class="content__works works">
                 <div class="works__container container">
@@ -471,18 +473,25 @@
                         </div>
 
                         <div class="works__calc">
-                            <img src="img/works/calculator.svg" alt="">
                             <div class="works__calc--info">
+                                <div class="works__calc--img">
+                                    <img src="img/works/calculator.svg" class="ibg" alt="">
+                                </div>
                                 <div class="works__calc--text">Рассчитайте стоимость стяжки <br>
                                     за 1 минуту для вашего помещения<br>
                                     И получите скидку 10%, только при расчете онлайн.
                                     </div>
-                                <button type="b" class="works__calc--btn btn">Расчёт стоимости со скидкой 10%</button>
-                            </div>                            
+                                
+                            </div>  
+                            <button data-modal="modalCost" type="button" class="works__calc--btn btn _modal__btn"><span class="btn--helper"></span> Расчёт стоимости со скидкой 10%</button>                          
                         </div>
                     </div>
                 </div>
             </section>
+
+            <!-- Конец Works -->
+
+            <!-- Начало Necessary -->
 
             <section class="content__necessary necessary">
                 <div class="necessary__container container">
@@ -538,14 +547,18 @@
                             </div>
                             <div class="necessary__body--question question">
                                 <div class="question__text">Ответим на любой вопрос</div>
-                                <button type="button" class="question__btn btn">Задать вопрос</button>
+                                <button data-modal="modalCallback" type="button" class="question__btn btn _modal__btn"><span class="btn--helper"></span>Задать вопрос</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section class="ourworks">
+            <!-- Конец Necessary -->
+
+            <!-- Начало Ourworks -->
+
+            <section class="ourworks" id = "ourworks">
                 <div class="ourworks__container container">
                     <div class="ourworks__inner">
                         <div class="ourworks__bg ourworks__firstbg">
@@ -557,15 +570,433 @@
                         <div class="ourworks__info">
                             <div class="ourworks__title title">Наши <span>работы</span></div>
                             <div class="ourworks__cats">
-                                <a href="" class="ourworks__cat">Квартиры</a>
+                                <a href="" class="ourworks__cat cat__active">Квартиры</a>
                                 <a href="" class="ourworks__cat">Коттеджи</a>
                                 <a href="" class="ourworks__cat">Коммерческие проекты</a>
+                            </div>
+                        </div>
+
+                        <div class="ourworks__slider">
+                            
+                            <div class="ourworks__container swiper-container">
+                                
+                                <div class="ourworks__wrapper swiper-wrapper">
+                                    <div class="ourworks__slide swiper-slide slide">
+                                        <div class="slide__inner">
+                                            <div class="slide__images">
+                                                <div class="slide__image">
+                                                    <img class="ibg" src="img/ourworks/First_slide-1.png" alt="">
+                                                </div>
+                                                <div class="slide__image">
+                                                    <img class="ibg" src="img/ourworks/First_slide-2.png" alt="">
+                                                </div>
+                                                <div class="slide__image">
+                                                    <img class="ibg" src="img/ourworks/First_slide-3.png" alt="">
+                                                </div>
+                                                <div class="slide__image">
+                                                    <img class="ibg" src="img/ourworks/First_slide-4.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="slide__about">
+                                                <div class="slide__about--title">Стяжка пола в 2-х комнатной квартире в ЖК Павловский квартал</div>
+                                                <ul class="slide__about--list">
+                                                    <li class="slide__about--text about">
+                                                        <img src="img/ourworks/about__img-1.png" alt="">
+                                                        <div class="about__info">
+                                                            <div class="about__info--type">Площадь:</div>
+                                                            <div class="about__info--txt">62м² / 60-70 мм</div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="slide__about--text about">
+                                                        <img src="img/ourworks/about__img-2.png" alt="">
+                                                        <div class="about__info">
+                                                            <div class="about__info--type">Дата:</div>
+                                                            <div class="about__info--txt">15.12.18</div>
+                                                        </div>
+
+                                                    </li>
+                                                    <li class="slide__about--text about">
+                                                        <img src="img/ourworks/about__img-4.png" alt="">
+                                                        <div class="about__info">
+                                                            <div class="about__info--type">Сроки:</div>
+                                                            <div class="about__info--txt">1 день</div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                                <div class="slide__order">
+                                                    <button data-modal="modalCost" type="button" class="slide__order--button btn _modal__btn"><span class="btn--helper"></span>Заказать расчет</button>
+                                                    <a href="tel:74951396109" class="slide__order--tel">+7 (495) 139-61-09</a>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="ourworks__slide swiper-slide slide">
+                                        <div class="slide__inner">
+                                            <div class="slide__images">
+                                                <div class="slide__image">
+                                                    <img class="ibg" src="img/ourworks/First_slide-1.png" alt="">
+                                                </div>
+                                                <div class="slide__image">
+                                                    <img class="ibg" src="img/ourworks/First_slide-2.png" alt="">
+                                                </div>
+                                                
+                                               
+                                            </div>
+                                            <div class="slide__about">
+                                                <div class="slide__about--title">Стяжка пола в 2-х комнатной квартире в ЖК Павловский квартал</div>
+                                                <ul class="slide__about--list">
+                                                    <li class="slide__about--text about">
+                                                        <img src="img/ourworks/about__img-1.png" alt="">
+                                                        <div class="about__info">
+                                                            <div class="about__info--type">Площадь:</div>
+                                                            <div class="about__info--txt">62м² / 60-70 мм</div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="slide__about--text about">
+                                                        <img src="img/ourworks/about__img-2.png" alt="">
+                                                        <div class="about__info">
+                                                            <div class="about__info--type">Дата:</div>
+                                                            <div class="about__info--txt">15.12.18</div>
+                                                        </div>
+
+                                                    </li>
+                                                    <li class="slide__about--text about">
+                                                        <img src="img/ourworks/about__img-4.png" alt="">
+                                                        <div class="about__info">
+                                                            <div class="about__info--type">Сроки:</div>
+                                                            <div class="about__info--txt">1 день</div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                                <div class="slide__order">
+                                                    <button data-modal="modalCost" type="button" class="slide__order--button btn _modal__btn"><span class="btn--helper"></span>Заказать расчет</button>
+                                                    <a href="tel:74951396109" class="slide__order--tel">+7 (495) 139-61-09</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ourworks__slide swiper-slide slide">
+                                        <div class="slide__inner">
+                                            <div class="slide__images">
+                                                <div class="slide__image">
+                                                    <img class="ibg" src="img/ourworks/First_slide-1.png" alt="">
+                                                </div>
+                                                <div class="slide__image">
+                                                    <img class="ibg" src="img/ourworks/First_slide-2.png" alt="">
+                                                </div>
+                                                <div class="slide__image">
+                                                    <img class="ibg" src="img/ourworks/First_slide-3.png" alt="">
+                                                </div>
+                                                <div class="slide__image">
+                                                    <img class="ibg" src="img/ourworks/First_slide-4.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="slide__about">
+                                                <div class="slide__about--title">Стяжка пола в 2-х комнатной квартире в ЖК Павловский квартал</div>
+                                                <ul class="slide__about--list">
+                                                    <li class="slide__about--text about">
+                                                        <img src="img/ourworks/about__img-1.png" alt="">
+                                                        <div class="about__info">
+                                                            <div class="about__info--type">Площадь:</div>
+                                                            <div class="about__info--txt">62м² / 60-70 мм</div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="slide__about--text about">
+                                                        <img src="img/ourworks/about__img-2.png" alt="">
+                                                        <div class="about__info">
+                                                            <div class="about__info--type">Дата:</div>
+                                                            <div class="about__info--txt">15.12.18</div>
+                                                        </div>
+
+                                                    </li>
+                                                    <li class="slide__about--text about">
+                                                        <img src="img/ourworks/about__img-4.png" alt="">
+                                                        <div class="about__info">
+                                                            <div class="about__info--type">Сроки:</div>
+                                                            <div class="about__info--txt">1 день</div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                                <div class="slide__order">
+                                                    <button data-modal="modalCost" type="button" class="slide__order--button btn _modal__btn"><span class="btn--helper"></span>Заказать расчет</button>
+                                                    <a href="tel:74951396109" class="slide__order--tel">+7 (495) 139-61-09</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ourworks__pagination swiper-pagination"></div>
+
+                                <div class="ourworks__prev swiper-button-prev"></div>
+                                <div class="ourworks__next swiper-button-next"></div>
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Конец Ourworks -->
+
+            <!-- Начало Comments -->
+
+            <section class="content__comments comments">
+                <div class="comments__container container">
+                    <div class="comments__inner">
+                        <div class="comments__info">
+                            <div class="comments__title title">МЫ ДЕЛАЕМ <span>КАЧЕСТВЕННО</span> И <span>НАДОЛГО</span> </div>
+                            <div class="comments__txt">Прочитайте <span>настоящие отзывы</span> о работе с нами от <span>реальных людей</span></div>
+                        </div>
+
+                        <div class="comments__slide--container swiper-container">
+                            <div class="comments__wrapper swiper-wrapper">
+                                <div class="comments__slide swiper-slide">
+                                    <div class="comments__slide--inner">
+                                        <img src="img/comments/comments_slider-2.png" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="comments__slide swiper-slide">
+                                    <div class="comments__slide--inner">
+                                        <img src="img/comments/comments_slider-1.png" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="comments__slide swiper-slide">
+                                    <div class="comments__slide--inner">
+                                        <img src="img/comments/comments_slider-3.png" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="comments__slide swiper-slide">
+                                    <div class="comments__slide--inner">
+                                        <img src="img/comments/comments_slider-2.png" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="comments__slide swiper-slide">
+                                    <div class="comments__slide--inner">
+                                        <img src="img/comments/comments_slider-2.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="comments__pagination swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Конец Comments -->
+
+            <!-- Начало Call -->
+
+            <section class="content__call call">
+                <div class="call__container container">
+                    <div class="call__inner">
+                        <div class="call__image">
+                            <img src="img/call/Builder_call.png" alt="">
+                        </div>
+
+                        <div class="call__image call__image--second">
+                            <img src="img/Background/Background_call-pseudo.png" alt="">
+                        </div>
+
+                        <div class="call__item">
+                            <div class="call__item--inner">
+                                <div class="call__item--title title">Убедитесь в нашей <span>эксперности</span> лично, просто позвонив нам:</div>
+                                <a href="tel:74951396109" class="call__item--tel">+7 (495) 139-61-09</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
+
+            <!-- Конец Call -->
+
+            <!-- Начало Hwork -->
+
+            <section class="content__hwork hwork">
+                <div class="hwork__container container">
+                    <div class="hwork__inner">
+                        <div class="hwork__title title">Как мы <span>работаем</span></div>
+
+                        <div class="hwork__items">
+                            <div class="hwork__item">
+                                <div class="hwork__item--img">
+                                    <img src="img/hwork/hwork_item-1.png" alt="">
+                                </div>
+                                <div class="hwork__item--text">Вы оставляете заявку</div>
+                            </div>
+    
+                            <div class="hwork__item">
+                                <div class="hwork__item--img">
+                                    <img src="img/hwork/hwork_item-2.png" alt="">
+                                </div>
+                                <div class="hwork__item--text">Бесплатный выезд замерщика</div>
+                            </div>
+    
+                            <div class="hwork__item">
+                                <div class="hwork__item--img">
+                                    <img src="img/hwork/hwork_item-3.png" alt="">
+                                </div>
+                                <div class="hwork__item--text">Согласование стоимости и сроков</div>
+                            </div>
+    
+                            <div class="hwork__item">
+                                <div class="hwork__item--img">
+                                    <img src="img/hwork/hwork_item-4.png" alt="">
+                                </div>
+                                <div class="hwork__item--text">Выезд бригады, заключение договора, аванс</div>
+                            </div>
+    
+                            <div class="hwork__item">
+                                <div class="hwork__item--img">
+                                    <img src="img/hwork/hwork_item-5.png" alt="">
+                                </div>
+                                <div class="hwork__item--text">Выполнение работ</div>
+                            </div>
+    
+                            <div class="hwork__item">
+                                <div class="hwork__item--img">
+                                    <img src="img/hwork/hwork_item-6.png" alt="">
+                                </div>
+                                <div class="hwork__item--text">Подписание акта, окончательный расчет</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- Конец Hwork -->
+
+            <section class="content__spollers spoller">
+                <div class="spoller__container container">
+                    <div class="spoller__inner">
+                        <div class="spoller__title title">Часто задаваемые <span>вопросы</span></div>
+                        <div class="spoller__items" data-type="" id="spoller-parent">
+                            <div class="spoller__item" id="spoller">
+                                <div class="spoller__item--questions">
+                                    <div class="spoller__item--question">
+                                        Сколько стоит стяжка пола?
+                                    </div>
+                                    <span class="spoller__item--btn"></span>
+                                </div>
+                                <div class="spoller__item--answer">
+                                    Стоимость работ зависит от общей площади и толщины стяжки, высоты подачи раствора (этажность), территориального расположения объекта. Для расчета стоимости Вашей стяжки свяжитесь с нами по телефону или оставьте заявку. Минимальный заказ: 40 000 рублей.
+                                </div>
+                            </div>
+
+                            <div class="spoller__item" id="spoller">
+                                <div class="spoller__item--questions">
+                                    <div class="spoller__item--question">
+                                        Сколько по времени займет работа?
+                                    </div>
+                                    <span class="spoller__item--btn"></span>
+                                </div>
+                                <div class="spoller__item--answer" id="answer">
+                                    Стоимость работ зависит от общей площади и толщины стяжки, высоты подачи раствора (этажность), территориального расположения объекта. Для расчета стоимости Вашей стяжки свяжитесь с нами по телефону или оставьте заявку. Минимальный заказ: 40 000 рублей.
+                                </div>
+                            </div>
+
+                            <div class="spoller__item" id="spoller">
+                                <div class="spoller__item--questions">
+                                    <div class="spoller__item--question">
+                                        Каким материалом работаете?
+                                    </div>
+                                    <span class="spoller__item--btn"></span>
+                                </div>
+                                <div class="spoller__item--answer">
+                                    Стоимость работ зависит от общей площади и толщины стяжки, высоты подачи раствора (этажность), территориального расположения объекта. Для расчета стоимости Вашей стяжки свяжитесь с нами по телефону или оставьте заявку. Минимальный заказ: 40 000 рублей.
+                                </div>
+                            </div>
+
+                            <div class="spoller__item" id="spoller">
+                                <div class="spoller__item--questions">
+                                    <div class="spoller__item--question">
+                                        Что делать раньше: стяжку пола или штукатурку стен?
+                                    </div>
+                                    <span class="spoller__item--btn"></span>
+                                </div>
+                                <div class="spoller__item--answer">
+                                    Стоимость работ зависит от общей площади и толщины стяжки, высоты подачи раствора (этажность), территориального расположения объекта. Для расчета стоимости Вашей стяжки свяжитесь с нами по телефону или оставьте заявку. Минимальный заказ: 40 000 рублей.
+                                </div>
+                            </div>
+
+                            <div class="spoller__item" id="spoller">
+                                <div class="spoller__item--questions">
+                                    <div class="spoller__item--question">
+                                        Кто приедет после заказа?
+                                    </div>
+                                    <span class="spoller__item--btn"></span>
+                                </div>
+                                <div class="spoller__item--answer">
+                                    Стоимость работ зависит от общей площади и толщины стяжки, высоты подачи раствора (этажность), территориального расположения объекта. Для расчета стоимости Вашей стяжки свяжитесь с нами по телефону или оставьте заявку. Минимальный заказ: 40 000 рублей.
+                                </div>
+                            </div>
+
+                            <div class="spoller__item" id="spoller">
+                                <div class="spoller__item--questions">
+                                    <div class="spoller__item--question">
+                                        Что входит в стоимость?
+                                    </div>
+                                    <span class="spoller__item--btn"></span>
+                                </div>
+                                <div class="spoller__item--answer">
+                                    Стоимость работ зависит от общей площади и толщины стяжки, высоты подачи раствора (этажность), территориального расположения объекта. Для расчета стоимости Вашей стяжки свяжитесь с нами по телефону или оставьте заявку. Минимальный заказ: 40 000 рублей.
+                                </div>
+                            </div>
+
+                            <div class="spoller__item" id="spoller">
+                                <div class="spoller__item--questions">
+                                    <div class="spoller__item--question">
+                                        В каких городах оказываете услуги?
+                                    </div>
+                                    <span class="spoller__item--btn"></span>
+                                </div>
+                                <div class="spoller__item--answer">
+                                    Стоимость работ зависит от общей площади и толщины стяжки, высоты подачи раствора (этажность), территориального расположения объекта. Для расчета стоимости Вашей стяжки свяжитесь с нами по телефону или оставьте заявку. Минимальный заказ: 40 000 рублей.
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                        <div class="spoller__questions">
+                            <div class="spoller__questions--inner">
+                                <div class="spoller__questions--img">
+                                    <img src="img/Background/Background_call-pseudo.png" alt="">
+                                </div>
+                                <div class="spoller__questions--body questions">
+                                    <div class="questions__inner">
+                                        <div class="questions__title title"><span>ОСТАЛИСЬ ВОПРОСЫ?</span></div>
+                                        <div class="questions__text">Оставьте ваш номер телефона, мы перезвоним и согласуем все вопросы.</div>
+                                        <form for="" class="questions__input">
+                                            <input type="tel" name="tel" placeholder="+7( --- ) --- -- --" id="tel">
+                                            <button type="submit" class="questions__btn btn"><span class="btn--helper"></span>Жду звонка</button>
+                                        </form>
+                                        <div class="questions__tel">
+                                            или позвоните нам
+                                            <a href="tel:74951396109"><span>+7 (495) 139-61-09</span></a>
+                                        </div>
+                                    </div>   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content__map map" id = "contacts">
+                <div class="map__inner">
+                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A6fd61ba7ba787fb370368affaf09eebba1d86ac15fdd43d382bb5d13049fe95d&amp;width=100%25&amp;height=423&amp;lang=ru_RU&amp;scroll=true"></script>
+                </div>
+            </section>
         </div>
+
+
+
 
 <!-- Конец контентной части -->
 
@@ -594,6 +1025,109 @@
 
 <!-- Конец Футера-->
 
+<!-- Модальные Окна -->
+
+<div class="modal__cost modal" id = "modalCost">
+    <div class="modal__cost--inner modal__inner">
+        <div class="modal__cost--body modal__body">
+            <button class="modal__cost--button modal__close"></button>
+            <div class="modal__info">
+                <div class="modal__cost--title modal__title"><span>РАСЧЕТ</span> СТОИМОСТИ</div>
+                <div class="modal__cost--text">Рассчитайте стоимость полусухой стяжки без выезда специалиста</div>
+            </div>
+            <form for="" class="modal__cost--form form">
+                <div class="form__input--size">
+                    <div class="form__input--img">
+                        <img src="img/modal/cost/size.svg" alt="">
+                    </div>
+                    <input class="form__size form__input" type="text" placeholder="Площадь помещения (м²)">
+                </div>
+
+                <div class="form__input--tel">
+                    <div class="form__input--img">
+                        <img src="img/modal/cost/tel.svg" alt="">
+                    </div>
+                    <input class="form__tel form__input" type="text" placeholder="+7 ( --- ) --- -- --" id="modalTel">
+                </div>
+                <button type="submit" class="form__button btn"><span class="btn--helper"></span> Рассчитать</button>
+
+                <div class="form__checkbox">
+                    <label for="checkbox">Нажимая “Рассчитать”, Вы даете согласие на обработку персональных данных.</label>
+                    <input type="checkbox" class="checkbox" id = "checkbox">
+                    <img src="img/modal/cost/check-mark.svg" alt="">
+                </div>
+            </form>
+            
+            <div class="modal__contacts">
+                <div class="modal__contacts--txt">
+                    <span>Свяжитесь с нами</span><br>
+                    через мессенджеры
+                </div>
+                <div class="modal__contacts--imgs">
+                    <a href="tel:74951396109" target="_blank" class="modal__contacts--img">
+                        <img class="modal__contacts--img--whatsapp" src="img/modal/cost/whatsapp.png" alt="">
+                    </a>
+                    <a href="https://web.telegram.org/" class="modal__contacts--img">
+                        <img class="modal__contacts--img--whatsapp" src="img/modal/cost/telegram.png" alt="">
+                    </a>   
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal__callback modal" id = "modalCallback">
+    <div class="modal__callback--inner modal__inner">
+        <div class="modal__callback--body modal__body">
+            <button class="modal__callback--button modal__close"></button>
+            <div class="modal__info">
+                <div class="modal__callback--title modal__title">ЗАКАЗ <span>ЗВОНКА</span></div>
+                <div class="modal__callback--text">Оставьте свои контакты и мы свяжемся с вами в ближайшее время</div>
+            </div>
+            <form for="" class="modal__callback--form form">
+                <div class="form__input--size">
+                    <div class="form__input--img">
+                        <img src="img/modal/cost/user.png" alt="">
+                    </div>
+                    <input class="form__size form__input" type="text" placeholder="Введите имя">
+                </div>
+
+                <div class="form__input--tel">
+                    <div class="form__input--img">
+                        <img src="img/modal/cost/tel.svg" alt="">
+                    </div>
+                    <input class="form__tel form__input" type="text" placeholder="+7 ( --- ) --- -- --" id="modalTel">
+                </div>
+                <button type="submit" class="form__button btn"><span class="btn--helper"></span> Рассчитать</button>
+
+                <div class="form__checkbox">
+                    <label for="checkbox">Нажимая “Заказать звонок”, Вы даете согласие на обработку персональных данных.</label>
+                    <input type="checkbox" class="checkbox" id = "checkbox">
+                    <img src="img/modal/cost/check-mark.svg" alt="">
+                </div>
+            </form>
+            
+            <div class="modal__contacts">
+                <div class="modal__contacts--txt">
+                    <span>Свяжитесь с нами</span><br>
+                    через мессенджеры
+                </div>
+                <div class="modal__contacts--imgs">
+                    <a href="tel:74951396109" target="_blank" class="modal__contacts--img">
+                        <img class="modal__contacts--img--whatsapp" src="img/modal/cost/whatsapp.png" alt="">
+                    </a>
+                    <a href="https://web.telegram.org/" class="modal__contacts--img">
+                        <img class="modal__contacts--img--whatsapp" src="img/modal/cost/telegram.png" alt="">
+                    </a>   
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Модальные Окна -->
+
 
     </div>
 
@@ -601,9 +1135,12 @@
     
 <!-- Js-файлы -->
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+    <script src="js/jquery.maskedinput.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="js/swiper.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/telMask.js"></script>
     
 </body>
 </html>
