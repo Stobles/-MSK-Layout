@@ -2012,15 +2012,22 @@ img[data-src] .works__card--img::before {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 390px;
-          flex: 0 1 390px;
   gap: 20px;
   -ms-grid-columns: 185px 20px 185px;
   grid-template-columns: 185px 185px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media (min-width: 767.98px) {
+  .slide__images {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 390px;
+            flex: 0 1 390px;
+  }
 }
 @media (max-width: 991.98px) {
   .slide__images {

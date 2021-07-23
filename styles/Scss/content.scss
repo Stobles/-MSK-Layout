@@ -1093,10 +1093,13 @@
 
     &__images{
         display: flex;
-        flex: 0 1 390px;
+        @media(min-width: $md3+px){
+            flex: 0 1 390px;
+        }
         gap: 20px;
         grid-template-columns: 185px 185px;
         justify-content: center;
+        align-items: center;
         @media (max-width: $md2+px) {
             padding: 0px 0px 20px 0px;
         }
