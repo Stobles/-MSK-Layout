@@ -1868,6 +1868,9 @@ img[data-src] .works__card--img::before {
   padding: 90px 0px 0px 0px;
   min-height: 960px;
 }
+.ourworks__container {
+  padding: 0px;
+}
 .ourworks__bg {
   position: absolute;
   display: none;
@@ -1952,6 +1955,11 @@ img[data-src] .works__card--img::before {
   width: 52px;
   border-radius: 50%;
 }
+@media (max-width: 767.98px) {
+  .ourworks .swiper-button-prev {
+    display: none;
+  }
+}
 .ourworks .swiper-button-next::after {
   color: #fff;
   font-size: 20px;
@@ -1964,9 +1972,19 @@ img[data-src] .works__card--img::before {
   width: 52px;
   border-radius: 50%;
 }
+@media (max-width: 767.98px) {
+  .ourworks .swiper-button-next {
+    display: none;
+  }
+}
 
 .slide {
   padding: 10px 93px 40px 93px;
+}
+@media (max-width: 767.98px) {
+  .slide {
+    padding: 10px 15px 40px 15px;
+  }
 }
 .slide__inner {
   display: -webkit-box;
@@ -1987,12 +2005,13 @@ img[data-src] .works__card--img::before {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 30px;
+    padding: 20px;
   }
 }
 .slide__images {
-  display: -ms-grid;
-  display: grid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-flex: 0;
       -ms-flex: 0 1 390px;
           flex: 0 1 390px;
@@ -2008,6 +2027,24 @@ img[data-src] .works__card--img::before {
     padding: 0px 0px 20px 0px;
   }
 }
+.slide__image--block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.slide__image--block > .slide__image:not(:last-child) {
+  margin: 0px 0px 20px 0px;
+}
 .slide__about {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2019,7 +2056,11 @@ img[data-src] .works__card--img::before {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 51%;
           flex: 0 1 51%;
-  padding: 0px 0px 0px 20px;
+}
+@media (min-width: 767.98px) {
+  .slide__about {
+    padding: 0px 0px 0px 20px;
+  }
 }
 .slide__about--list {
   border-top: 1px dashed rgba(33, 33, 33, 0.3);
@@ -2055,12 +2096,35 @@ img[data-src] .works__card--img::before {
       -ms-flex-align: center;
           align-items: center;
   padding: 48px 0px;
+  padding-bottom: 48px;
+  padding-top: 48px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media (max-width: 1120px) {
+  .slide__order {
+    padding-bottom: calc(10px + 38 * ((100vw - 320px) / 800));
+  }
+}
+@media (max-width: 1120px) {
+  .slide__order {
+    padding-top: calc(10px + 38 * ((100vw - 320px) / 800));
+  }
+}
+@media (max-width: 679.98px) {
+  .slide__order {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 30px;
+  }
 }
 .slide__order--tel {
   font-size: 18px;
   font-weight: 700;
   color: #212121;
-  padding: 0px 0px 0px 20px;
 }
 .slide__order--button {
   font-size: 16px;
@@ -2091,9 +2155,25 @@ img[data-src] .works__card--img::before {
   font-size: 18px;
   font-weight: 500;
 }
+@media (max-width: 1120px) {
+  .about__info {
+    font-size: calc(14px + 4 * ((100vw - 320px) / 800));
+  }
+}
 .about__info--txt {
-  width: 148px;
+  font-size: 16px;
   text-align: left;
+  color: #FF5B14;
+}
+@media (max-width: 1120px) {
+  .about__info--txt {
+    font-size: calc(13px + 3 * ((100vw - 320px) / 800));
+  }
+}
+@media (min-width: 767.98px) {
+  .about__info--txt {
+    width: 148px;
+  }
 }
 
 .comments__container {
@@ -2877,6 +2957,8 @@ img[data-src] .works__card--img::before {
           align-items: center;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
+  -webkit-transform: translateX(-200000%);
+          transform: translateX(-200000%);
 }
 .modal__inner {
   max-width: 442px;
@@ -2945,27 +3027,20 @@ img[data-src] .works__card--img::before {
   font-size: 30px;
   font-weight: 700;
   text-transform: uppercase;
+  text-align: center;
   margin: 60px 0px 20px 0px;
 }
 .modal__title span {
   color: #FF5B14;
 }
-.modal__cost {
-  -webkit-transform: translateX(-130%) skew(-10deg, -40deg);
-          transform: translateX(-130%) skew(-10deg, -40deg);
-}
-.modal__cost--title span {
+.modal--title span {
   color: #FF5B14;
 }
-.modal__cost--text {
+.modal--text {
   font-size: 18px;
   font-weight: 400;
   max-width: 322px;
   text-align: center;
-}
-.modal__callback {
-  -webkit-transform: translateX(-130%) skew(-10deg, -40deg);
-          transform: translateX(-130%) skew(-10deg, -40deg);
 }
 .modal__contacts {
   display: -webkit-box;

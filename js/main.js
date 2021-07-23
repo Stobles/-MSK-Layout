@@ -98,17 +98,7 @@ window.onload = function () {
 
     const modals = document.querySelectorAll('.modal')
     const lockPadding = window.innerWidth - document.querySelector('.wrapper').offsetWidth + 'px';
-
-    if(myMobile.Android() || myMobile.iOS() || myMobile.BlackBerry()){
-        modals.forEach(modal =>{
-            modal.style.transform = "translateY(130%)"
-        })
-    }
-    else{
-        modals.forEach(modal =>{
-            modal.style.transform = "translateX(-130%) skew(-10deg, -40deg)"
-        })
-    }
+    
     document.addEventListener('click', (e)=>{
         if(e.target.classList.contains('_modal__btn')){
             let modalToActive = e.target.dataset.modal
@@ -132,7 +122,7 @@ window.onload = function () {
                 const modal = modals[i];
                 if(modal.classList.contains('_active')){
                     modal.classList.remove('_active')
-                    modal.style.transform = "translateX(-130%) skew(-10deg, -40deg)"
+                    modal.style.transform = "translateX(-200%) skew(-10deg, -40deg)"
                     document.body.classList.remove('lock')
                     document.body.style.paddingRight = '0';
                     document.querySelector('.header').style.paddingRight = '0';

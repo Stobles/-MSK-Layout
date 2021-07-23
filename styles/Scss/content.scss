@@ -962,6 +962,10 @@
         min-height: 960px;
     }
 
+    &__container{
+        padding: 0px;
+    }
+
     &__bg{
         position: absolute;
         display: none;
@@ -1042,6 +1046,9 @@
         height: 52px;
         width: 52px;
         border-radius: 50%;
+        @media (max-width: $md3+px) {
+            display: none;
+        }
     }
 
     .swiper-button-next::after{
@@ -1056,6 +1063,9 @@
         height: 52px;
         width: 52px;
         border-radius: 50%;
+        @media (max-width: $md3+px) {
+            display: none;
+        }
     }
 
 
@@ -1063,11 +1073,15 @@
 
 .slide{
     padding: 10px 93px 40px 93px;
+    @media (max-width: $md3+px) {
+        padding: 10px 15px 40px 15px;
+        
+    }
     &__inner{
         display: flex;
         @media (max-width: $md2+px) {
             flex-direction: column;
-            padding: 30px;
+            padding: 20px;
         }
         min-height: 390px;
         box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2);
@@ -1078,7 +1092,7 @@
     }
 
     &__images{
-        display: grid;
+        display: flex;
         flex: 0 1 390px;
         gap: 20px;
         grid-template-columns: 185px 185px;
@@ -1088,11 +1102,27 @@
         }
     }
 
+    &__image--block{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__image--block > &__image{
+        &:not(:last-child){
+            margin:0px 0px 20px 0px;
+        }
+        
+    }
+
     &__about{
         display: flex;
         flex-direction: column;
         flex: 0 1 51%;
-        padding: 0px 0px 0px 20px;
+        @media (min-width: $md3+px) {
+            padding: 0px 0px 0px 20px;
+        }
 
         &--list{
             border-top: 1px dashed rgba(33, 33, 33, 0.3);
@@ -1123,12 +1153,19 @@
         display: flex;
         align-items: center;
         padding: 48px 0px;
+        @include adaptiv-value('padding-bottom',48,10,1);
+        @include adaptiv-value('padding-top',48,10,1);
+
+        justify-content: space-between;
+        @media(max-width: $mp1+px){
+            flex-direction: column;
+            gap: 30px;
+        }
 
         &--tel{
             font-size: 18px;
             font-weight: 700;
             color: $maincolor;
-            padding: 0px 0px 0px 20px;
         }
 
         &--button{
@@ -1150,12 +1187,16 @@
         justify-content: space-between;
         width: 100%;
         padding: 0px 0px 0px 20px;
-        font-size: 18px;
+        @include adaptiv-value('font-size',18,14,1);
         font-weight: 500;
 
         &--txt{
-            width: 148px;
+            @include adaptiv-value('font-size',16,13,1);
+            @media(min-width: $md3+px){
+                width: 148px;
+            }
             text-align: left;
+            color: $orangeColor;
         }
     }
 }

@@ -6,10 +6,6 @@ new Swiper('.works__cards--container',{
     slidesPerView: 2,
     spaceBetween: 15,
     slidesPerGroup: 2,
-
-    breakpoints:{
-
-    }
 });
 
 new Swiper('.ourworks__container', {
@@ -25,6 +21,7 @@ new Swiper('.ourworks__container', {
         dynamicBullets: true,
       },
       centeredSlides: true,
+      watchSlidesProgress: true
 });
 
 new Swiper('.comments__slide--container', {
