@@ -66,14 +66,13 @@
         font-size: 30px;
         font-weight: 700;
         text-transform: uppercase;
+        text-align: center;
         margin: 60px 0px 20px 0px;
         span{
             color: $orangeColor;
         }
     }
-
-    &__cost{
-        transform: translateX(-120%) skew(-10deg,-40deg);
+        
         &--title{
             span{
                 color: $orangeColor;
@@ -88,11 +87,7 @@
         }
 
   
-    }
-
-    &__callback{
-        transform: translateX(-120%) skew(-10deg,-40deg);
-    }
+    } 
 
     &__contacts{
         display: flex;
@@ -129,7 +124,6 @@
         }
     }
     
-}
 
 .form{
     display: flex;

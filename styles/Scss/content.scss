@@ -662,7 +662,7 @@
     }
 
     &__cards{
-        @media(min-width: $md2+px){
+        @media(min-width: $md3+px){
             display: grid;
         }
         display: none;
@@ -808,7 +808,7 @@
 .swiper__slider--body{
     display: flex;
     padding: 0px 0px 30px 0px;
-    @media(min-width: $md2+px){
+    @media(min-width: $md3+px){
         display: none;
     }
 }
@@ -1329,9 +1329,15 @@
     &__items{
         display: flex;
         justify-content: space-around;
-        background: url(../../img/Background/Hwork_item-bg.png);
-        background-repeat: no-repeat;
-        background-position: center 13%;
+        @media(min-width: $md2+px){
+            background: url(../../img/Background/Hwork_item-bg.png);
+            background-repeat: no-repeat;
+            background-position: center 13%;
+        }
+        @media(max-width: $md2+px){
+            flex-wrap: wrap;
+            gap: 20px;
+        }
     }
 
     &__item{
@@ -1375,6 +1381,10 @@
         padding: 18px 20px 18px 0px;
         @include adaptiv-value('padding-left',46,20,1);
         border-radius: 15px;
+        @media (max-width: $md2 + px) {
+            border-radius: 20px;
+            
+        }
         box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2);
         background-color: #fff;
         margin: 15px;
@@ -1407,9 +1417,11 @@
 
         &--btn{
             display: flex;
-            flex: 0 0 43px;
-            width: 43px;
             height: 43px;
+            @media(max-width: $md2+px){
+               flex: 0 0 35px;
+               height: 35px;
+            }
             position: relative;
             background-color: #fff;
             box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
@@ -1422,6 +1434,10 @@
                 left: 50%;
                 width: 13px;
                 height: 3px;
+                @media(max-width: $md2+px){
+                    width: 10px;
+                    height: 2px;
+                }
                 display: block;
                 transform: translateX(-50%);
                 background-color: $orangeColor;
@@ -1433,8 +1449,10 @@
                 top: 50%;
                 left: 50%;
                 transform: translateX(-50%) rotate(90deg);
-                width: 13px;
-                height: 3px;
+                @media(max-width: $md2+px){
+                    width: 10px;
+                    height: 2px;
+                }
                 display: block;
                 background-color: $orangeColor;
                 transition: all .3s ease;
@@ -1480,8 +1498,6 @@
             border-radius: 15px;
             background-color: #FFFFFF;
             box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2);
-            width: 815px;
-            height: 400px;
         }
 
         &--img{
@@ -1512,6 +1528,7 @@
 .questions{
     position: relative;
     &__title{
+        @include adaptiv-value('font-size',32,22,1);
         margin: 0px 0px 20px 0px;
     }
 
@@ -1519,17 +1536,18 @@
     &__text{
         display: flex;
         justify-content: center;
-        margin: 0px 0px 35px 0px;
+        margin: 0px 30px 35px 30px;
+        text-align: center;
 
-        font-size: 18px;
+        @include adaptiv-value('font-size',18,13,1);
         font-weight: 500;
     }
 
     &__inner{
         @include adaptiv-value('padding-top',58,35,1);
-            @include adaptiv-value('padding-bottom',58,35,1);
-            @include adaptiv-value('padding-right',54,12,1);
-            @include adaptiv-value('padding-left',54,12,1);
+        @include adaptiv-value('padding-bottom',58,35,1);
+        @include adaptiv-value('padding-right',54,12,1);
+        @include adaptiv-value('padding-left',54,12,1);
     }
 
     &__input{
@@ -1540,20 +1558,42 @@
         max-width: 636px;
         overflow: hidden;
         margin: 0px auto 36px auto;
+        background-color: transparent;
+        @media(max-width: $md3+px){
+            flex-direction: column;
+            box-shadow: none;
+            padding: 0px 15px 22px;
+            margin: 0px auto 10px auto;
+        }
         input{
             display: flex;
             flex: 0 1 400px;
             border-radius: 15px;
-            font-size: 16px;
+            @include adaptiv-value('font-size',16,13,1);
             padding: 22px 31px;
+            @include adaptiv-value('padding-top',22,18,1);
+            @include adaptiv-value('padding-bottom',22,18,1);
+            @media(max-width: $md3+px){
+                flex: 0;
+                width: 100%;
+                box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2);
+                margin: 0px 0px 27px 0px;
+                
+            }
 
         }
 
         button{
-            flex: 1;
-            border-bottom-left-radius: 0px;
-            border-top-left-radius: 0px;
-            border-bottom: 1px solid #ff961f;
+            @media(min-width: $md3+px){
+                flex: 1;
+                border-bottom-left-radius: 0px;
+                border-top-left-radius: 0px;
+                border-bottom: 1px solid #ff961f;
+            }
+            @media (max-width: $md3+px) {
+                padding: 20px 50px;
+                
+            }
         }
     }
 
@@ -1561,11 +1601,11 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        font-size: 19px;
+        @include adaptiv-value('font-size',19,15,1);
         font-weight: 500;
         span{
             color: $orangeColor;
-            font-size: 35px;
+            @include adaptiv-value('font-size',35,24,1);
             font-weight: 700;
         }
 

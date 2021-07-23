@@ -89,6 +89,9 @@ window.onload = function () {
             id = button.dataset.idtoscroll
             element = document.getElementById(id)
             scrollTo(element)
+            menuBody.classList.remove('_active')
+            burger.classList.remove('_active')
+            document.body.classList.remove('lock')
         })
         
     }
@@ -101,20 +104,17 @@ window.onload = function () {
             modal.style.transform = "translateY(130%)"
         })
     }
+    else{
+        modals.forEach(modal =>{
+            modal.style.transform = "translateX(-130%) skew(-10deg, -40deg)"
+        })
+    }
     document.addEventListener('click', (e)=>{
         if(e.target.classList.contains('_modal__btn')){
             let modalToActive = e.target.dataset.modal
             for (let i = 0; i < modals.length; i++) {
                 const modal = modals[i];
                 if (modal.id == modalToActive){
-                    if(myMobile.Android() || myMobile.iOS() || myMobile.BlackBerry()){
-                        modal.style.transform = "translateY(0)"
-                        modal.classList.add('_active');
-                        document.body.classList.add('lock')
-                        console.log(lockPadding)
-                        document.body.style.paddingRight = lockPadding;
-                        document.querySelector('.header').style.paddingRight = lockPadding;
-                    }
                     modal.style.transform = "translateX(0) skew(0deg, 0deg)"
                     modal.classList.add('_active');
                     document.body.classList.add('lock')
@@ -131,14 +131,6 @@ window.onload = function () {
             for (let i = 0; i < modals.length; i++) {
                 const modal = modals[i];
                 if(modal.classList.contains('_active')){
-                    if(myMobile.Android() || myMobile.iOS() || myMobile.BlackBerry()){
-                        modal.style.transform = "translateY(130%)"
-                        modal.classList.add('_active');
-                        document.body.classList.add('lock')
-                        console.log(lockPadding)
-                        document.body.style.paddingRight = lockPadding;
-                        document.querySelector('.header').style.paddingRight = lockPadding;
-                    }
                     modal.classList.remove('_active')
                     modal.style.transform = "translateX(-130%) skew(-10deg, -40deg)"
                     document.body.classList.remove('lock')
