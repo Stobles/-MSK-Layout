@@ -2532,6 +2532,9 @@ img[data-src] .works__card--img::before {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 43px;
+          flex: 0 0 43px;
   height: 43px;
   position: relative;
   background-color: #fff;
@@ -2572,6 +2575,8 @@ img[data-src] .works__card--img::before {
   left: 50%;
   -webkit-transform: translateX(-50%) rotate(90deg);
           transform: translateX(-50%) rotate(90deg);
+  width: 13px;
+  height: 3px;
   display: block;
   background-color: #FF5B14;
   -webkit-transition: all 0.3s ease;

@@ -1461,6 +1461,7 @@
 
         &--btn{
             display: flex;
+            flex: 0 0 43px;
             height: 43px;
             @media(max-width: $md2+px){
                flex: 0 0 35px;
@@ -1493,6 +1494,8 @@
                 top: 50%;
                 left: 50%;
                 transform: translateX(-50%) rotate(90deg);
+                width: 13px;
+                height: 3px;
                 @media(max-width: $md2+px){
                     width: 10px;
                     height: 2px;
