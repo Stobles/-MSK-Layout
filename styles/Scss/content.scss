@@ -5,7 +5,7 @@
 // Начало Main //
 
 .main{
-    background: url(../../img/Background/main_bg.png);
+    background: url(../../img/Background/main_bg.webp);
     background-size: cover;
     padding: 265px 0px 0px 0px ;
     &__body{
@@ -299,7 +299,7 @@
 
 .experts{
     padding: 170px 0px 0px 0px;
-    background: url(../../img/Background/Experts_bg.png);
+    background: url(../../img/Background/Experts_bg.webp);
     background-repeat: no-repeat;
     background-position: top;
     background-color: rgb(253, 253, 253);
@@ -592,13 +592,20 @@
         border-radius: 15px;
 
         &--img{
-            background: url(../../img/gif/loading.gif);
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: 50%;
+            padding: 0px 0px 168px/254px *100% 0px;
             img{
                 width: 100%;
             }
+        }
+
+        & img[data-src]{
+            .services__card--img{
+                background: url(../../img/gif/loading.gif);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 50%!important;
+            }
+
         }
 
         &--props{
@@ -650,7 +657,7 @@
 // Начало Works//
 
 .works{
-    background: url(../../img/Background/works_bg.png);
+    background: url(../../img/Background/works_bg.webp);
     background-position: center;
 
     &__inner{
@@ -689,23 +696,10 @@
         }
 
         &--img{
-            position: relative;
-            background: url(../../img/gif/loading.gif);
-            background-repeat: no-repeat;
-            background-size: 50%;
-            background-position: center;
-            height: 173px;
-            &::before{
-                content: '';
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                background-color: #fff;
-            }
+            padding: 0px 0px 95px/218px * 100% 0px;
+            width: 218px;
+            background-size: contain!important;
 
-            img[data-src] &::before{
-                display: none;
-            }
             img{
                 top: 50%;
                 transform: translateY(-50%);
@@ -715,7 +709,7 @@
         &--title{
             font-size: 17px;
             font-weight: 500;
-            padding: 26px 0px 0px 0px;
+            padding: 26px 0px 41px 0px;
         }
 
         &--checkmark{
@@ -737,7 +731,7 @@
 
         &--txt{
             text-align: center;
-            padding: 0px 25px 37px 25px;
+            padding: 39px 25px 37px 25px;
             line-height: 120%;
         }
 
@@ -818,7 +812,7 @@
 // Начало Necessary//
 
 .necessary{
-    background: url(../../img/Background/necessary_bg.png);
+    background: url(../../img/Background/necessary_bg.webp);
     color: #fff;
     background-size: cover;
     background-repeat: no-repeat;
@@ -933,7 +927,7 @@
         ul{
             margin: 20px 0px 0px 5px;
         }
-        li{
+        li{         
             @include adaptiv-value('padding-bottom',27,9,1);
             span{
                 @include adaptiv-value('font-size',16,9,1);
@@ -945,8 +939,7 @@
     &__picture{
         img{
             width: 100%;
-            height: 100%;
-            object-fit: cover;
+            object-fit: contain;
         }
     }
 
@@ -1285,7 +1278,7 @@
 // Начало Call//
 
 .call{
-    background: url(../../img/Background/Call_bg.png);
+    background: url(../../img/Background/Call_bg.webp);
     background-repeat: no-repeat;
     background-position: 25% 0%;
     &__inner{
@@ -1358,7 +1351,7 @@
 //Начало Hwork//
 
 .hwork{
-    background: url(../../img/Background/Hwork_bg.png);
+    background: url(../../img/Background/Hwork_bg.webp);
     background-repeat: no-repeat;
     background-size: cover;
     &__inner{
@@ -1374,7 +1367,7 @@
         display: flex;
         justify-content: space-around;
         @media(min-width: $md2+px){
-            background: url(../../img/Background/Hwork_item-bg.png);
+            background: url(../../img/Background/Hwork_item-bg.webp);
             background-repeat: no-repeat;
             background-position: center 13%;
         }
@@ -1561,7 +1554,7 @@
             transform: translateY(-50%);
             width: 100%;
             height: 235px;
-            background: url(../../img/Background/Hwork_bg.png);
+            background: url(../../img/Background/Hwork_bg.webp);
             background-repeat: no-repeat;
             background-position: center;
             border-radius: 15px;

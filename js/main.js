@@ -100,7 +100,8 @@ window.onload = function () {
     const lockPadding = window.innerWidth - document.querySelector('.wrapper').offsetWidth + 'px';
     
     document.addEventListener('click', (e)=>{
-        if(e.target.classList.contains('_modal__btn')){
+        console.log(e.target)
+        if(e.target.classList.contains('_modal__btn') || e.target.closest('._modal__btn')){
             let modalToActive = e.target.dataset.modal
             for (let i = 0; i < modals.length; i++) {
                 const modal = modals[i];
