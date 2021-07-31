@@ -1,1167 +1,735 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"> 
+    <meta http-equiv="Cache-control" content="public">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="styles/Css/style.css">
-    <title>Стяжка пола</title>
+    <link rel="stylesheet" href="home_style/Css/style.css">
+
+    <title>Yoga</title>
 </head>
 <body>
-    <div class="wrapper">
-<!-- Начало Шапки -->
 
+    <!-- Начало Wrapper -->
+
+    <div class="wrapper">
+         <!-- Начало Header -->
         <header class="header">
             <div class="header__wrapper">
-                <div class="hedaer__container container">
-                    <div class="header__body">
-                    <!-- Начало Тела шапки -->
-                        <div class="header__body--main">
-                            <div class="header__body--adaptive">
-                                <div class="header__logo">
-                                    <div class="header__logo--img">
-                                        <img src="img/header/Logotype.svg" alt="img">
-                                    </div>
-                                    <div class="header__logo--info">
-                                        <div class="header__logo--info--title">ООО «МСК»</div>
-                                        <div class="header__logo--info--text">Полусухая стяжка пола в Москве и области</div>
-                                    </div>
-                                </div>
-    
-                                <button type="button" class="burger">
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                </button>
-                            </div>
-                                
-                                
-                                <div class="header__contacts contacts">
-                                    <div class="contacts__info">
-                                        <a href="tel:74951396109" class="contacts__info--tel">+7 (495) 139-61-09</a>
-                                        <div class="contacts__info--txt">ежедневно с 08:00 до 20:00</div>
-                                    </div>
-                                    <div class="contacts__callback">
-                                        <a href="https://api.whatsapp.com/send/?phone=74951396109
-                                        " target="_blank" class="contacts__callback--whatsapp">
-                                            <img src="img/header/Whatsapp.svg" alt="">
-                                            Whatsapp
-                                        </a>
-                                        <button data-modal="modalCallback" class="contacts__callback--btn btn _modal__btn"><span class="contacts__callback--btn--helper"></span> Обратный звонок</button>
-                                    </div>
-                                </div> 
-                        </div> 
-                    <!-- Конец Тела шапки -->
-
-                    <!-- Начало Navbar -->
-
-                        <div class="header__body--nav nav">
-                            <div class="nav__items">
-                                <button type="button" class="nav__item" data-idToScroll = "main">Главная</button>
-                                <button type="button" class="nav__item" data-idToScroll = "ourworks">Наши работы</button>
-                                <button type="button" class="nav__item" data-idToScroll = "cost">Стоимость</button>
-                                <button type="button" class="nav__item" data-idToScroll = "contacts">Контакты</button>
-                            </div>
-                        </div>
-                    <!-- Конец Navbar -->
+                <div class="header__inner">
+                    <div class="header__logo">
+                        <img src="img/header/Logo/Logo.png" alt="">
                     </div>
+                    <div class="header__navigation">
+                        <nav class="header__navbar">
+                            <a href="index.html" class="header__navbar--item">Home</a>
+                            <a href="about.html" class="header__navbar--item">About us</a>
+                            <a href="#" class="header__navbar--item">Teacher</a>
+                            <a href="#" class="header__navbar--item">Pricing</a>
+                            <a href="#" class="header__navbar--item">Blog</a>
+                            <a href="#" class="header__navbar--item">Login</a>
+                        </nav>
+                        <button type="menu" class="header__button btn">Start your free trial</button>
+                    </div>
+                    <button class="burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
                 </div>
             </div>
         </header>
-        
-<!-- Конец Шапки -->
-
-<!-- Начало контентной части -->
-
+         <!-- Конец Header -->
+         <!-- Начало Content -->
         <div class="content">
-            <!-- Начало Main -->
-            <main class="content__main main" id = "main">
+            <main class="main">
                 <div class="main__container container">
-                    <div class="main__body">
-                        <div class="main__inner">
-                            <div class="main__info info">
-                                <div class="info__title">Идеально <span>ровный</span> пол под покрытие</div>
-                                <div class="info__text">За 1 день, с немецким оборудованием и официальной гарантией по <br> договору</div>
-                                <div class="info__list list">
-                                    <div class="list__title"> Гарантируем: </div>
-                                    <ul>
-                                        <li>
-                                            <img src="img/main/List--img 1.png" alt="">
-                                            <div class="list__text">Ровную поверхность</div>
+                    <div class="main__inner">
+                        <h1>
+                            <div class="main__item">Be Happy</div>
+                            <div class="main__item">Be Healthy</div>
+                            <div class="main__item">Be Infinity</div>
+                        </h1>
+                    </div>
+                </div>
+            </main>
+
+            <section class="about">
+                <div class="about__bg">
+                    <img data-src="img/background/about_bg.png" src="img/lazyLoading/1x1.png" alt="">
+                </div>
+                <div class="about__container container">
+                    <div class="about__inner">
+                        <div class="about__video">
+                            <h2 class="about__video--title">Everyone's Yoga</h2>
+                            <div class="about__video--subscription">
+                                We offers over 4,000 professionally-filmed online yoga classes taught by experienced, certified yoga teachers to customers around the world. We believe that yoga should be accessible to everyone and our classes are designed to give you an in-studio experience, at an affordable price, in your own home.
+                            </div>
+
+                            <div class="about__video--body ibg">
+                                <img data-src="img/about/icons/about_img.png" src="img/lazyLoading/1x1.png" alt="">
+                            </div>
+                        </div>
+
+                        <div class="about__items">
+                            <div class="about__item">
+                                <div class="about__item--icon">
+                                    <img data-src="img/about/icons/icon_1.png" src="img/lazyLoading/1x1.png" alt="">
+                                </div>
+                                <h3 class="about__item--title">Balance Body & Mind</h3>
+                                <div class="about__item--text">Lorem Ipsum is simply dummy text of the printing typesetting industry. Lorem Ipsum has been industry's standard.</div>
+                            </div>
+                            <div class="about__item">
+                                <div class="about__item--icon">
+                                    <img data-src="img/about/icons/icon_2.png" src="img/lazyLoading/1x1.png" alt="">
+                                </div>
+                                <h3 class="about__item--title">Weight Loss</h3>
+                                <div class="about__item--text">Lorem Ipsum is simply dummy text of the printing typesetting industry. Lorem Ipsum has been industry's standard.</div>
+                            </div>
+                            <div class="about__item">
+                                <div class="about__item--icon">
+                                    <img data-src="img/about/icons/icon_3.png" src="img/lazyLoading/1x1.png" alt="">
+                                </div>
+                                <h3 class="about__item--title">Meditation Practice </h3>
+                                <div class="about__item--text">Lorem Ipsum is simply dummy text of the printing typesetting industry. Lorem Ipsum has been industry's standard.</div>
+                            </div>
+                            <div class="about__item">
+                                <div class="about__item--icon">
+                                    <img data-src="img/about/icons/icon_4.png" src="img/lazyLoading/1x1.png" alt="">
+                                </div>
+                                <h3 class="about__item--title">Yoga is a way to freedom </h3>
+                                <div class="about__item--text">Lorem Ipsum is simply dummy text of the printing typesetting industry. Lorem Ipsum has been industry's standard.</div>
+                            </div>
+                            <div class="about__item">
+                                <div class="about__item--icon">
+                                    <img data-src="img/about/icons/icon_5.png" src="img/lazyLoading/1x1.png" alt="">
+                                </div>
+                                <h3 class="about__item--title">Increased energy</h3>
+                                <div class="about__item--text">Lorem Ipsum is simply dummy text of the printing typesetting industry. Lorem Ipsum has been industry's standard.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="classes">
+                <div class="classes__bg">
+                    <img data-src="img/classes/classes_before.png" src="img/lazyLoading/1x1.png" alt="">
+                </div>
+                <div class="classes__container container">
+                    <div class="classes__inner">
+                        <h2 class="classes__title title">Our Classes</h2>
+
+                        <div class="classes__slider">
+                            <div class="classes__slider--container swiper-container">
+                                <div class="classes__slider--wrapper swiper-wrapper">
+                                    <div class="classes__slider--slide swiper-slide">
+                                        <div class="classes__slider--img ibg">
+                                            <img data-src="img/classes/slider_img_1.png"  src="img/lazyLoading/1x1.png" alt="">
+                                        </div>
+                                        <h3 class="classes__slider--title">Seated and Supine Poses for Beginners
+                                        </h3>
+                                        <ul class="classes__slider--list">
+                                            <li class="classes__slider--paragraph">
+                                                <img src="img/classes/slider_icons/clock.svg" alt="">
+                                                7:00 am — 11:00 am
+                                            </li>
+                                            <li class="classes__slider--paragraph">
+                                                <img src="img/classes/slider_icons/user.svg" alt="">
+                                                Simon Park
+                                            </li>
+                                            <li class="classes__slider--paragraph">
+                                                <img src="img/classes/slider_icons/increase.svg" alt="">
+                                                Advanced
+                                            </li>
+                                        </ul>
+
+                                        <div class="classes__slider--subscription">
+                                            Welcome to part 5 of our beginner series with Simon Park! 
+                                        </div>
+                                    </div>
+
+                                    <div class="classes__slider--slide swiper-slide">
+                                        <div class="classes__slider--img ibg">
+                                            <img data-src="img/classes/slider_img_2.png"  src="img/lazyLoading/1x1.png" alt="">
+                                        </div>
+                                        <h3 class="classes__slider--title">Work Towards Compass Pose
+                                        </h3>
+                                        <ul class="classes__slider--list">
+                                            <li class="classes__slider--paragraph">
+                                                <img src="img/classes/slider_icons/clock.svg" alt="">
+                                                7:00 am — 11:00 am
+                                            </li>
+                                            <li class="classes__slider--paragraph">
+                                                <img src="img/classes/slider_icons/user.svg" alt="">
+                                                Simon Park
+                                            </li>
+                                            <li class="classes__slider--paragraph">
+                                                <img src="img/classes/slider_icons/increase.svg" alt="">
+                                                Advanced
+                                            </li>
+                                        </ul>
+
+                                        <div class="classes__slider--subscription">
+                                            Stretch shoulders, hips, and hamstrings as you work towards Compass Pose (Parivrtta Surya Yantrasana).
+ 
+                                        </div>
+                                    </div>
+
+                                    <div class="classes__slider--slide swiper-slide">
+                                        <div class="classes__slider--img ibg">
+                                            <img data-src="img/classes/slider_img_3.png"  src="img/lazyLoading/1x1.png" alt="">
+                                        </div>
+                                        <h3 class="classes__slider--title">Handstand Variations and Transitions
+                                        </h3>
+                                        <ul class="classes__slider--list">
+                                            <li class="classes__slider--paragraph">
+                                                <img src="img/classes/slider_icons/clock.svg" alt="">
+                                                7:00 am — 11:00 am
+                                            </li>
+                                            <li class="classes__slider--paragraph">
+                                                <img src="img/classes/slider_icons/user.svg" alt="">
+                                                Simon Park
+                                            </li>
+                                            <li class="classes__slider--paragraph">
+                                                <img src="img/classes/slider_icons/increase.svg" alt="">
+                                                Advanced
+                                            </li>
+                                        </ul>
+
+                                        <div class="classes__slider--subscription">
+                                            Explore handstand variations and transitions in this advanced class. A brief warm up will prepare you to play with inversions! 
+                                        </div>
+                                    </div>
+
+                                    <div class="classes__slider--slide swiper-slide">
+                                        <div class="classes__slider--img ibg">
+                                            <img data-src="img/classes/slider_img_4.png"  src="img/lazyLoading/1x1.png" alt="">
+                                        </div>
+                                        <h3 class="classes__slider--title">Advanced Backbending
+                                        </h3>
+                                        <ul class="classes__slider--list">
+                                            <li class="classes__slider--paragraph">
+                                                <img src="img/classes/slider_icons/clock.svg" alt="">
+                                                7:00 am — 11:00 am
+                                            </li>
+                                            <li class="classes__slider--paragraph">
+                                                <img src="img/classes/slider_icons/user.svg" alt="">
+                                                Simon Park
+                                            </li>
+                                            <li class="classes__slider--paragraph">
+                                                <img src="img/classes/slider_icons/increase.svg" alt="">
+                                                Advanced
+                                            </li>
+                                        </ul>
+
+                                        <div class="classes__slider--subscription">
+                                            Amanda Botur has created a class to help you prepare for the hormonal shifts and rising emotions that may occur in the days ... 
+                                        </div>
+                                    </div>
+
+                                    <div class="classes__slider--slide swiper-slide">
+                                        <div class="classes__slider--img ibg">
+                                            <img data-src="img/classes/slider_img_1.png"  src="img/lazyLoading/1x1.png" alt="">
+                                        </div>
+                                        <h3 class="classes__slider--title">Seated and Supine Poses for Beginners
+                                        </h3>
+                                        <ul class="classes__slider--list">
+                                            <li class="classes__slider--paragraph">
+                                                <img src="img/classes/slider_icons/clock.svg" alt="">
+                                                7:00 am — 11:00 am
+                                            </li>
+                                            <li class="classes__slider--paragraph">
+                                                <img src="img/classes/slider_icons/user.svg" alt="">
+                                                Simon Park
+                                            </li>
+                                            <li class="classes__slider--paragraph">
+                                                <img src="img/classes/slider_icons/increase.svg" alt="">
+                                                Advanced
+                                            </li>
+                                        </ul>
+
+                                        <div class="classes__slider--subscription">
+                                            Welcome to part 5 of our beginner series with Simon Park! 
+                                        </div>
+                                    </div>
+
+                                    <div class="classes__slider--slide swiper-slide">
+                                        <div class="classes__slider--img ibg">
+                                            <img data-src="img/classes/slider_img_2.png"  src="img/lazyLoading/1x1.png" alt="">
+                                        </div>
+                                        <h3 class="classes__slider--title">Seated and Supine Poses for Beginners
+                                        </h3>
+                                        <ul class="classes__slider--list">
+                                            <li class="classes__slider--paragraph">
+                                                <img src="img/classes/slider_icons/clock.svg" alt="">
+                                                7:00 am — 11:00 am
+                                            </li>
+                                            <li class="classes__slider--paragraph">
+                                                <img src="img/classes/slider_icons/user.svg" alt="">
+                                                Simon Park
+                                            </li>
+                                            <li class="classes__slider--paragraph">
+                                                <img src="img/classes/slider_icons/increase.svg" alt="">
+                                                Advanced
+                                            </li>
+                                        </ul>
+                                        <div class="classes__slider--subscription">
+                                            Welcome to part 5 of our beginner series with Simon Park! 
+                                        </div>
+                                    </div>
+
+                                    <div class="classes__slider--slide swiper-slide">
+                                        <div class="classes__slider--img ibg">
+                                            <img data-src="img/classes/slider_img_3.png"  src="img/lazyLoading/1x1.png" alt="">
+                                        </div>
+                                        <h3 class="classes__slider--title">Seated and Supine Poses for Beginners
+                                        </h3>
+                                        <ul class="classes__slider--list">
+                                            <li class="classes__slider--paragraph">
+                                                <img src="img/classes/slider_icons/clock.svg" alt="">
+                                                7:00 am — 11:00 am
+                                            </li>
+                                            <li class="classes__slider--paragraph">
+                                                <img src="img/classes/slider_icons/user.svg" alt="">
+                                                Simon Park
+                                            </li>
+                                            <li class="classes__slider--paragraph">
+                                                <img src="img/classes/slider_icons/increase.svg" alt="">
+                                                Advanced
+                                            </li>
+                                        </ul>
+
+                                        <div class="classes__slider--subscription">
+                                            Welcome to part 5 of our beginner series with Simon Park! 
+                                        </div>
+                                    </div>
+
+                                    <div class="classes__slider--slide swiper-slide">
+                                        <div class="classes__slider--img ibg">
+                                            <img data-src="img/classes/slider_img_4.png"  src="img/lazyLoading/1x1.png" alt="">
+                                        </div>
+                                        <h3 class="classes__slider--title">Seated and Supine Poses for Beginners
+                                        </h3>
+                                        <ul class="classes__slider--list">
+                                            <li class="classes__slider--paragraph">
+                                                <img src="img/classes/slider_icons/clock.svg" alt="">
+                                                7:00 am — 11:00 am
+                                            </li>
+                                            <li class="classes__slider--paragraph">
+                                                <img src="img/classes/slider_icons/user.svg" alt="">
+                                                Simon Park
+                                            </li>
+                                            <li class="classes__slider--paragraph">
+                                                <img src="img/classes/slider_icons/increase.svg" alt="">
+                                                Advanced
+                                            </li>
+                                        </ul>
+                                        <div class="classes__slider--subscription">
+                                            Welcome to part 5 of our beginner series with Simon Park! 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="classes__slider--prev swiper-button-prev"></div>
+                            <div class="classes__slider--next swiper-button-next"></div>  
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+            <section class="subscribe">
+                <div class="subscribe__container container">
+                    <div class="subscribe__inner">
+                        <div class="subscribe__trial">
+                            <h2 class="subscribe__trial--title">Tap into your inner fountain of youth.</h2>
+                            <div class="subscribe__trial--text">Access hundreds of yoga classes shot in natural studios around the world. Unlimited access for $15/month.
+                            </div>
+                            <button type="button" class="subscribe__trial--btn btn">START YOUR 14-DAY FREE TRIAL</button>
+                        </div>
+
+                        <div class="subscribe__imgs">
+                            <div class="subscribe__img ibg">
+                                <img src="img/subscribe/subscribe_1.webp" alt="">
+                            </div>
+                            <div class="subscribe__img ibg">
+                                <img src="img/subscribe/subscribe_2.webp" alt="">
+                            </div>
+                            <div class="subscribe__img ibg">
+                                <img src="img/subscribe/subscribe_3.webp" alt="">
+                            </div>
+                            <div class="subscribe__img ibg">
+                                <img src="img/subscribe/subscribe_4.webp" alt="">
+                            </div>
+                            <div class="subscribe__img ibg">
+                                <img src="img/subscribe/subscribe_5.webp" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="preteachers">
+                <div class="preteachers__container container">
+                    <div class="preteachers__inner">
+                        <div class="preteachers__info">
+                            <h2 class="preteachers__title">The Most Experienced Yoga Instructors</h2>
+                            <div class="preteachers__text">Our mission is to bring the communities of Brookhaven, Dunwoody, Old Fourth Ward, and Buckhead a knowledgeable, welcoming, and comfortable place to practice yoga and to enhance your well-being and general approach to holistic health.
+
+                        </div>
+                        </div>
+                        <div class="preteachers__slide preteachers__slide--down">
+                            <h3 class="preteachers__slide--title">Meet Our Teacher</h3>
+                            <button class="preteachers__slide--btn">
+                                <img src="img/preteachers/arrow.svg" width="16px" alt="">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="teachers" id = "teachers">
+                <div class="teachers__container container">
+                    <div class="teachers__inner">
+                        <div class="teachers__items">
+                            <div class="teachers__item">
+                                <div class="teachers__item--img ibg">
+                                    <img src="img/teachers/teacher_1.png" alt="">
+                                </div>
+                                <div class="teachers__item--title">Becky Nickerson
+                                </div>
+                                <div class="teachers__item--prof">Owner/Lead Instructor
+                                </div>
+                            </div>
+
+                            <div class="teachers__item">
+                                <div class="teachers__item--img ibg">
+                                    <img src="img/teachers/teacher_2.png" alt="">
+                                </div>
+                                <div class="teachers__item--title">Becky Nickerson
+                                </div>
+                                <div class="teachers__item--prof">Owner/Lead Instructor
+                                </div>
+                            </div>
+
+                            <div class="teachers__item">
+                                <div class="teachers__item--img ibg">
+                                    <img src="img/teachers/teacher_3.png" alt="">
+                                </div>
+                                <div class="teachers__item--title">Becky Nickerson
+                                </div>
+                                <div class="teachers__item--prof">Owner/Lead Instructor
+                                </div>
+                            </div>
+
+                            <div class="teachers__item">
+                                <div class="teachers__item--img ibg">
+                                    <img src="img/teachers/teacher_4.png" alt="">
+                                </div>
+                                <div class="teachers__item--title">Becky Nickerson
+                                </div>
+                                <div class="teachers__item--prof">Owner/Lead Instructor
+                                </div>
+                            </div>
+
+                            <div class="teachers__item">
+                                <div class="teachers__item--img ibg">
+                                    <img src="img/teachers/teacher_5.png" alt="">
+                                </div>
+                                <div class="teachers__item--title">Becky Nickerson
+                                </div>
+                                <div class="teachers__item--prof">Owner/Lead Instructor
+                                </div>
+                            </div>
+
+
+                            <div class="teachers__item">
+                                <div class="teachers__item--img ibg">
+                                    <img src="img/teachers/teacher_6.png" alt="">
+                                </div>
+                                <div class="teachers__item--title">Becky Nickerson
+                                </div>
+                                <div class="teachers__item--prof">Owner/Lead Instructor
+                                </div>
+                            </div>
+
+                            <div class="teachers__item">
+                                <div class="teachers__item--img ibg">
+                                    <img src="img/teachers/teacher_7.png" alt="">
+                                </div>
+                                <div class="teachers__item--title">Becky Nickerson
+                                </div>
+                                <div class="teachers__item--prof">Owner/Lead Instructor
+                                </div>
+                            </div>
+
+                            <div class="teachers__item">
+                                <div class="teachers__item--img ibg">
+                                    <img src="img/teachers/teacher_8.png" alt="">
+                                </div>
+                                <div class="teachers__item--title">Becky Nickerson
+                                </div>
+                                <div class="teachers__item--prof">Owner/Lead Instructor
+                                </div>
+                            </div>
+
+                            <div class="teachers__item">
+                                <div class="teachers__item--img ibg">
+                                    <img src="img/teachers/teacher_9.png" alt="">
+                                </div>
+                                <div class="teachers__item--title">Becky Nickerson
+                                </div>
+                                <div class="teachers__item--prof">Owner/Lead Instructor
+                                </div>
+                            </div>
+
+                            <div class="teachers__item">
+                                <div class="teachers__item--img ibg">
+                                    <img src="img/teachers/teacher_10.png" alt="">
+                                </div>
+                                <div class="teachers__item--title">Becky Nickerson
+                                </div>
+                                <div class="teachers__item--prof">Owner/Lead Instructor
+                                </div>
+                            </div>
+
+                            <div class="teachers__item">
+                                <div class="teachers__item--img ibg">
+                                    <img src="img/teachers/teacher_11.png" alt="">
+                                </div>
+                                <div class="teachers__item--title">Becky Nickerson
+                                </div>
+                                <div class="teachers__item--prof">Owner/Lead Instructor
+                                </div>
+                            </div>
+                            <div class="teachers__item">
+                                <div class="teachers__item--img ibg">
+                                    <img src="img/teachers/teacher_12.png" alt="">
+                                </div>
+                                <div class="teachers__item--title">Becky Nickerson
+                                </div>
+                                <div class="teachers__item--prof">Owner/Lead Instructor
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="challenge">
+                <div class="challenge__container container">
+                    <div class="challenge__inner">
+                        <div class="challenge__info">
+                            <h2 class="challenge__title">2020 Renewal Series</h2>
+                            <div class="challenge__text">Finally, a resolution you can stick to. Reconnect with your fitness goals in 2017 with four classes designed to ease you back into your routine.
+                            </div>
+                            <div class="challenge__info--block--btn">
+                                <button class="challenge__btn btn">Take this challenge</button>
+                            </div>
+                        </div>
+
+                        <div class="challenge__img">
+                            <img data-src="img/background/challenge_bg.webp" src="img/lazyLoading/1x1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="logos">
+                <div class="logos__container container">
+                    <div class="logos__inner">
+                        <div class="logos__items">
+                            <div class="logos__item">
+                                <img src="img/logos/logos_1.png" alt="">
+                            </div>
+                            <div class="logos__item">
+                                <img src="img/logos/logos_2.png" alt="">
+                            </div>
+                            <div class="logos__item">
+                                <img src="img/logos/logos_3.png" alt="">
+                            </div>
+                            <div class="logos__item">
+                                <img src="img/logos/logos_4.png" alt="">
+                            </div>
+                            <div class="logos__item">
+                                <img src="img/logos/logos_5.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+         <!-- Конец Content -->
+         <!-- Начало Footer -->
+        <footer class="footer">
+            <div class="footer__inner">
+                <div class="footer__subscribe subscribe">
+                    <div class="footer__subscribe--container container">
+                        <div class="footer__subscribe--inner">
+                            <div class="footer__subscribe--logo">
+                                <img src="img/footer/logo/Logo.png" alt="">
+                            </div>
+                            <div class="footer__subscribe--body">
+                                <div class="footer__subscribe--body--info">
+                                    <h2 class="footer__subscribe--body--title">Subscribe</h2>
+                                     <div class="footer__subscribe--body--text">To receive the lastest freebies in your inbox</div>
+                                </div>
+                                <form for="#" class="footer__subscribe--input">
+                                    <div class="footer__subscribe--input--div">
+                                        <input type="email" placeholder="Your Address Email">
+                                    </div>
+                                    <button type="submit" class="footer__subscribe--btn btn">SUBSCRIBE</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__body">
+                    <div class="footer__body--container container">
+                        <div class="footer__body--inner">
+                            <div class="footer__body--lists">
+                                <div class="footer__contact">
+                                    <h2 class="footer__contact--title footer__title">Contact us</h2>
+                                    <ul class="footer__contact--list">
+                                        <li class="footer__contact--list--item">
+                                            PO Box 16122 Collins Street West,
+                                            Victoria 8007 Australia
                                         </li>
-                                        <li>
-                                            <img src="img/main/List--img 2.png" alt="">
-                                            <div class="list__text">Сохранность вашим нервам</div>
+                                        <li class="footer__contact--list--item">
+                                            Alitstudios@gmai.com
                                         </li>
-                                        <li>
-                                            <img src="img/main/List--img 3.png" alt="">
-                                            <div class="list__text">Уважение к Вашему времени</div>
+                                        <li class="footer__contact--list--item">
+                                            +61 3 8376 6284
+                                        </li>
+                                    </ul>
+                                    <div class="footer__contact--links">
+                                        <div class="footer__contact--link facebook">
+                                            <img src="img/footer/links/facebook.svg" alt="">
+                                        </div>
+                                        <div class="footer__contact--link twitter">
+                                            <img src="img/footer/links/twitter.svg" alt="">
+                                        </div>
+                                        <div class="footer__contact--link googleplus">
+                                            <img src="img/footer/links/google-plus.svg" alt="">
+                                        </div>
+                                        <div class="footer__contact--link pinterest">
+                                            <img src="img/footer/links/pinterest.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="footer__links">
+                                    <h2 class="footer__links--title footer__title">Useful links</h2>
+                                    <ul class="footer__links--list">
+                                        <li class="footer__links--item"><a href="#">About us</a>
+                                        </li>
+                                        <li class="footer__links--item"><a href="#">Advertise</a>
+                                            
+                                        </li>
+                                        <li class="footer__links--item"><a href="#">Terms & Conditions</a></li>
+                                        <li class="footer__links--item"><a href="#">Privacy Policy</a></li>
+                                        <li class="footer__links--item"><a href="#">Careers</a></li>
+                                        <li class="footer__links--item"><a href="#">Shop</a></li>
+                                    </ul>
+                                </div>
+                                <div class="footer__timetable">
+                                    <h2 class="footer__timetable--title footer__title">Open Hours</h2>
+                                    <ul class="footer__timetable--list">
+                                        <li class="footer__timetable--item">
+                                            <div class="footer__timetable--item--day">
+                                                Monday
+                                                <i class="fas fa-chevron-right"></i>
+                                            </div>
+                                            <div class="footer__timetable--item--hour">11am - 2pm</div>
+                                        </li>
+                                        <li class="footer__timetable--item">
+                                            <div class="footer__timetable--item--day">
+                                                Tuesday
+                                                <i class="fas fa-chevron-right"></i>
+                                            </div>
+                                            <div class="footer__timetable--item--hour">8am - 10pm</div>
+                                        </li>
+                                        <li class="footer__timetable--item">
+                                            <div class="footer__timetable--item--day">
+                                                Wednesday
+                                                <i class="fas fa-chevron-right"></i>
+                                            </div>
+                                            <div class="footer__timetable--item--hour">11am - 12pm</div>
+                                        </li>
+                                        <li class="footer__timetable--item">
+                                            <div class="footer__timetable--item--day">
+                                                Thursday
+                                                <i class="fas fa-chevron-right"></i>
+                                            </div>
+                                            <div class="footer__timetable--item--hour">11am - 12pm</div>
+                                        </li>
+                                        <li class="footer__timetable--item">
+                                            <div class="footer__timetable--item--day">
+                                                Friday
+                                                <i class="fas fa-chevron-right"></i>
+                                            </div>
+                                            <div class="footer__timetable--item--hour">10am - 2pm</div>
+                                        </li>
+                                        <li class="footer__timetable--item">
+                                            <div class="footer__timetable--item--day">
+                                                Saturday
+                                                <i class="fas fa-chevron-right"></i>
+                                            </div>
+                                            <div class="footer__timetable--item--hour">10am - 2pm</div>
+                                        </li>
+                                        <li class="footer__timetable--item">
+                                            <div class="footer__timetable--item--day">
+                                                Sunday
+                                                <i class="fas fa-chevron-right"></i>
+                                            </div>
+                                            <div class="footer__timetable--item--hour">Close</div>
                                         </li>
                                     </ul>
                                 </div>
                             </div>
-                            <div class="main__calc calc">
-                                <img src="img/main/Builder.png" alt="">
-                                <div class="calc__window">
-                                    <div class="calc__window--title">Рассчитайте стоимость стяжки без выезда специалиста <span>прямо сейчас</span></div>
-                                    <button data-modal="modalCost" class="calc__window--btn btn _modal__btn"><span class="calc__window--btn--helper"></span>Предварительный расчет стоимости</button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="main__date date">
-                            <span class="date__pseudo"></span>
-                            <div class="date__body">
-                                <div class="date__body--inner">
-                                    <img src="img/main/foreman 1.svg" alt="img">
-                                    <div class="date__text">Выполняем от <span>50м²</span> до <span>800м²</span> в день</div>
-                                </div>
-                            </div>
-                            <span class="date__pseudo"></span>
-                        </div>
-
-
-                    </div>
-                </div>
-            </main>
-            <!-- Конец Main -->
-
-            <!-- Начало Experts -->
-            <section class="content__experts experts">
-                <div class="experts__container container">
-                    <div class="experts__inner">
-                        <div class="experts__hist hist">
-                            <div class="hist__title">Мы <span>эксперты</span> в нише полусухой <br> стяжки пола</div>
-                            <div class="hist__text">
-                                <p>
-                                    Mы - oднa из пepвыx кoмпaний в Mocквe, нaчaвшиx пpeдocтaвлять уcлуги стяжки пола полусухим способом.
-                                </p>
-                                <p>
-                                    Собственное оборудование, бригады работающие на постоянной основе, большой   опыт работы, гибкий подход к каждому клиенту,
-                                    гарантия, работа по договору, персональный менеджер, консультации до и после осуществления всего комплекса работ.
-                                </p>
-                                <p>
-                                    Мы работаем для того чтобы вы остались довольны.
-                                </p>
-                                    
-                                    
-                            </div>
-                        </div>
-                        <div class="experts__advantages advantages">
-                            <div class="advantages__items">
-                                <div class="advantages__item"> 
-                                    <span>5</span> лет работы
-                                </div>
-                                <div class="advantages__item">
-                                    <span>700</span> 
-                                    <div class="advantages__item--reverse">
-                                        завершенных объектов<span>+</span>
-                                    </div>
-                                    
-                                </div>
-                                <div class="advantages__item">
-                                    <span>3</span> года гарантии
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="experts__contacts">
-                            <div class="experts__contacts--txt">По любым возникающим у Вас вопросам, смело звоните нам:</div>
-                            <a href="tel:74951396109" class="experts__contacts--tel">+7 (495) 139-61-09</a>
-                        </div>
-
-                    </div>
-                </div>
-            </section>
-            <!-- Конец Experts -->
-
-            <!-- Начало Materials -->
-            <section class="content__materials materials">
-                <div class="materials__container container">
-                    <div class="materials__inner">
-                        <div class="materials__info">
-                            <div class="materials__info--title">ТОЛЬКО <span>ЛУЧШИЕ</span> МАТЕРИАЛЫ
-                                и оборудование</div>
-                            <div class="materials__info--txt">Мы не экономим на материалах и оборудовании, поскольку знаем, что это скажется на качестве и долговечности покрытия.</div>
-                        </div>
-                        <div class="materials__body">
-                            <div class="materials__img">
-                                <img src="img/Background/materials_bg.png" alt="img">
-                            </div>
-                            
-                            <div class="materials__body--item materials__body--pneumo">
-                                <div class="materials__body--item--title">Пнeвмoнaгнeтaтeль</div>
-                                <div class="materials__body--item--model">Putzmeister 740</div>
-                            </div>
-                            <div class="materials__body--item materials__body--cement">
-                                <div class="materials__body--item--title">Eвpoцeмeнт M500</div>
-                            </div>
-                            <div class="materials__body--item materials__body--sand">
-                                <div class="materials__body--item--title">Промытый песок</div>
-                            </div>
-                            
-
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Конец Materials -->
-
-            <!-- Начало Services -->
-
-            <seciton class="content__services services" id = "cost">
-                <div class="services__container container">
-                    <div class="services__inner">
-                        <div class="services__title title"><span>СТОИМОСТЬ</span> ПОЛУСУХОЙ СТЯЖКИ ПОЛА</div>
-                        <div class="services__cards">
-                            <div class="services__card">
-                                
-                                <div class="services__card--name">СТАНДАРТНАЯ ПОЛУСУХАЯ СТЯЖКА</div>
-
-                                <a href="#" class="services__card--img">
-                                    <img data-src="img/services/services_1.png" src="img/gif/1x1.png" class="ibg" alt="img">
-                                </a>
-                                
-                                <ul class="services__card--props">
-                                    <li class="services__card--prop">
-                                        <img src="img/services/check.svg" alt="">
-                                        <span>Толщина слоя:</span> от 60 мм
-                                    </li>
-                                    <li class="services__card--prop">
-                                        <img src="img/services/check.svg" alt="">
-                                        <span>Сроки:</span> от 150м² за смену
-                                    </li>
-                                    <li class="services__card--prop">
-                                        <img src="img/services/check.svg" alt="">
-                                        <span>Гарантия:</span> 5 лет
-                                    </li>
-                                </ul>
-                                <div class="services__card--price">
-                                    oт 450 ₽/м²
-                                </div>
-                            </div>
-
-                            <div class="services__card">
-                                
-                                <div class="services__card--name">ПОЛИСТИРОЛЬНАЯ ПОЛУСУХАЯ СТЯЖКА</div>
-
-                                <a href="#" class="services__card--img">
-                                    <img data-src="img/services/services_2.png" src="img/gif/1x1.png" class="ibg" alt="img">
-                                </a>
-                                
-                                <ul class="services__card--props">
-                                    <li class="services__card--prop">
-                                        <img src="img/services/check.svg" alt="">
-                                        <span>Толщина слоя:</span> от 60 мм
-                                    </li>
-                                    <li class="services__card--prop">
-                                        <img src="img/services/check.svg" alt="">
-                                        <span>Сроки:</span> от 150м² за смену
-                                    </li>
-                                    <li class="services__card--prop">
-                                        <img src="img/services/check.svg" alt="">
-                                        <span>Гарантия:</span> 5 лет
-                                    </li>
-                                </ul>
-                                <div class="services__card--price">oт 450 ₽/м²</div>
-                            </div>
-
-                            <div class="services__card">
-                                
-                                <div class="services__card--name">АРМИРОВАННАЯ ПОЛУСУХАЯ СТЯЖКА</div>
-
-                                <a href="#" class="services__card--img">
-                                    <img data-src="img/services/services_3.png" src="img/gif/1x1.png" class="ibg" alt="img">
-                                </a>
-                                
-                                <ul class="services__card--props">
-                                    <li class="services__card--prop">
-                                        <img src="img/services/check.svg" alt="">
-                                        <span>Толщина слоя:</span> от 60 мм
-                                    </li>
-                                    <li class="services__card--prop">
-                                        <img src="img/services/check.svg" alt="">
-                                        <span>Сроки:</span> от 150м² за смену
-                                    </li>
-                                    <li class="services__card--prop">
-                                        <img src="img/services/check.svg" alt="">
-                                        <span>Гарантия:</span> 5 лет
-                                    </li>
-                                </ul>
-                                <div class="services__card--price">oт 450 ₽/м²</div>
-                            </div>
-
-                            <div class="services__card">
-                                
-                                <div class="services__card--name">СТЯЖКА ТЕПЛОГО ПОЛА</div>
-
-                                <a href="#" class="services__card--img">
-                                    <img data-src="img/services/services_4.png" src="img/gif/1x1.png" class="ibg" alt="img">
-                                </a>
-                                
-                                <ul class="services__card--props">
-                                    <li class="services__card--prop">
-                                        <img src="img/services/check.svg" alt="">
-                                        <span>Толщина слоя:</span> от 60 мм
-                                    </li>
-                                    <li class="services__card--prop">
-                                        <img src="img/services/check.svg" alt="">
-                                        <span>Сроки:</span> от 150м² за смену
-                                    </li>
-                                    <li class="services__card--prop">
-                                        <img src="img/services/check.svg" alt="">
-                                        <span>Гарантия:</span> 5 лет
-                                    </li>
-                                </ul>
-                                <div class="services__card--price">oт 450 ₽/м²</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </seciton>
-
-            <!-- Конец Services -->
-
-            <!-- Начало Works -->
-
-            <section class="content__works works">
-                <div class="works__container container">
-                    <div class="works__inner">
-                        <div class="works__title title">В <span>СТОИМОСТЬ РАБОТ</span> УЖЕ ВХОДИТ</div>
-
-                            <div class="works__cards">
-                                <div class="works__card">
-                                    <div class="works__card--checkmark">
-                                        <img src="img/works/check.svg" width="31" height="31" alt="img">
-                                    </div>
-                                    <div class="works__card--info">
-                                        <div class="works__card--title">Материалы и доставка</div>
-                                        <div class="works__card--img">
-                                            <img data-src="img/works/works_1.png" src="img/gif/1x1.png" class="ibg" alt="img">
-                                        </div>
-                                        <div class="works__card--txt">Строительные смеси
-                                            и специальные добавки</div>
-                                    </div>
-                                </div>
-
-                                <div class="works__card">
-                                    <div class="works__card--checkmark">
-                                        <img  src="img/works/check.svg" width="31" height="31" alt="img">
-                                    </div>
-                                    <div class="works__card--info">
-                                        <div class="works__card--title">Укладка стяжки</div>
-                                        <div class="works__card--img">
-                                            <img data-src="img/works/works_2.png" src="img/gif/1x1.png" class="ibg" alt="img">
-                                        </div>
-                                        <div class="works__card--txt">Полный комплекс работ
-                                            под ключ</div>
-                                    </div>
-                                </div>
-
-                                <div class="works__card">
-                                    <div class="works__card--checkmark">
-                                        <img src="img/works/check.svg" width="31" height="31" alt="img">
-                                    </div>
-                                    <div class="works__card--info">
-                                        <div class="works__card--title">Техника и доставка</div>
-                                        <div class="works__card--img">
-                                            <img data-src="img/works/works_3.png" src="img/gif/1x1.png" class="ibg" alt="img">
-                                        </div>
-                                        <div class="works__card--txt">Сами доставим, разгрузим
-                                            поднимем на этаж</div>
-                                    </div>
-                                </div>
-
-                                <div class="works__card">
-                                    <div class="works__card--checkmark">
-                                        <img src="img/works/check.svg" width="31" height="31" alt="img">
-                                    </div>
-                                    <div class="works__card--info">
-                                        <div class="works__card--title">Уборка</div>
-                                        <div class="works__card--img">
-                                            <img data-src="img/works/works_4.png" src="img/gif/1x1.png" class="ibg" alt="img">
-                                        </div>
-                                        <div class="works__card--txt">После монтажа убираем
-                                            за собой весь мусор</div>
-                                    </div>
-                                </div>
-                            </div>   
-
-
-                        <div class="swiper__slider--body">
-                            <div class="works__cards--container swiper-container">
-                                <div class="works__cards--wrapper swiper-wrapper">
-                                    <div class="works__card--slide swiper-slide">
-                                        <div class="works__card--slide--inner">
-                                            <div class="works__card--body">
-                                                <div class="works__card--checkmark">
-                                                    <img src="img/works/check.svg" width="31" height="31" alt="img">
-                                                </div>
-                                                <div class="works__card--info">
-                                                    <div class="works__card--title">Материалы и доставка</div>
-                                                    <div class="works__card--img">
-                                                        <img src="img/works/works_1.png" class="ibg" alt="img">
-                                                    </div>
-                                                    <div class="works__card--txt">Строительные смеси
-                                                        и специальные добавки</div>
-                                                </div>
-                                            </div>
-                                    
-                                        </div>
-                                    </div>
-                                    <div class="works__card--slide swiper-slide">
-                                        <div class="works__card--slide--inner">
-                                            <div class="works__card--body">
-                                                <div class="works__card--checkmark">
-                                                    <img src="img/works/check.svg" width="31" height="31" alt="img">
-                                                </div>
-                                                <div class="works__card--info">
-                                                    <div class="works__card--title">Укладка стяжки</div>
-                                                    <div class="works__card--img">
-                                                        <img src="img/works/works_1.png" class="ibg" alt="img">
-                                                    </div>
-                                                    <div class="works__card--txt">Полный комплекс работ
-                                                        под ключ</div>
-                                                </div>
-                                            </div>
-                                            
-                                        </div>
-                                    </div>
-                                    <div class="works__card--slide swiper-slide">
-                                        <div class="works__card--slide--inner">
-                                            <div class="works__card--body">
-                                                <div class="works__card--checkmark">
-                                                    <img src="img/works/check.svg" width="31" height="31" alt="img">
-                                                </div>
-                                                <div class="works__card--info">
-                                                    <div class="works__card--title">Техника и доставка</div>
-                                                    <div class="works__card--img">
-                                                        <img src="img/works/works_1.png" class="ibg" alt="img">
-                                                    </div>
-                                                    <div class="works__card--txt">Сами доставим, разгрузим
-                                                        поднимем на этаж</div>
-                                                </div>
-                                            </div>
-                    
-                                        </div>
-                                    </div>
-                                    <div class="works__card--slide swiper-slide">
-                                        <div class="works__card--slide--inner">
-                                            <div class="works__card--body">
-                                                <div class="works__card--checkmark">
-                                                    <img src="img/works/check.svg" width="31" height="31" alt="img">
-                                                </div>
-                                                <div class="works__card--info">
-                                                    <div class="works__card--title">Уборка</div>
-                                                    <div class="works__card--img">
-                                                        <img src="img/works/works_1.png" class="ibg" alt="img">
-                                                    </div>
-                                                    <div class="works__card--txt">После монтажа убираем
-                                                        за собой весь мусор</div>
-                                                </div>
-                                            </div>
-                                            
-                                        </div>  
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="works__calc">
-                            <div class="works__calc--info">
-                                <div class="works__calc--img">
-                                    <img src="img/works/calculator.svg" class="ibg" alt="">
-                                </div>
-                                <div class="works__calc--text">Рассчитайте стоимость стяжки <br>
-                                    за 1 минуту для вашего помещения<br>
-                                    И получите скидку 10%, только при расчете онлайн.
-                                    </div>
-                                
-                            </div>  
-                            <button data-modal="modalCost" type="button" class="works__calc--btn btn _modal__btn"><span class="btn--helper"></span> Расчёт стоимости со скидкой 10%</button>                          
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Конец Works -->
-
-            <!-- Начало Necessary -->
-
-            <section class="content__necessary necessary">
-                <div class="necessary__container container">
-                    <div class="necessary__inner">
-                        <div class="necessary__title title">ПРИ <span>НЕОБХОДИМОСТИ</span></div>
-                        <div class="necessary__body">
-                            <div class="necessary__body--info">
-                                <ul class="necessary__body--list">
-                                    <li class="necessary__list--text">
-                                        <img src="img/necessary/mark.svg" alt="">
-                                        <span>
-                                            Сразу проведем монтаж гидроизоляции,
-                                            например в ванной или утеплим пол в комнате.
-                                        </span>
-                                        
-                                    </li>
-                                    <li class="necessary__list--text">
-                                        <img src="img/necessary/mark.svg" alt="">
-                                        <span>
-                                            Дадим рекомендации по укладке проводов,<br>
-                                        если они будут проходить по полу.<br>
-                                        Вы получите наиболее оптимальный вариант укладки электрики.<br>
-                                        Это даст минимальную толщину будущей стяжки.<br>
-                                        И вы получите недорогую полусухую стяжку в Москве.
-                                        </span>
-                                        
-                                    </li>
-                                </ul>
-
-                                <div class="necessary__body--img img">
-                                    <div class="img__inner">
-                                        <div class="img__picture">
-                                            <img data-src="img/necessary/necessary.png" src="img/gif/1x1.png" alt="">
-                                        </div>
-                                        <ul>
-                                            <li><img src="img/necessary/mark_second.png" alt="">
-                                                <span>Напольное покрытие</span>
-                                            </li>
-                                            <li><img src="img/necessary/mark_second.png" alt="">
-                                                <span>Стяжка пола</span>
-                                            </li>
-                                            <li><img src="img/necessary/mark_second.png" alt="">
-                                                <span>Теплозвукоизоляция</span>
-                                            </li>
-                                            <li><img src="img/necessary/mark_second.png" alt="">
-                                                <span>Гидроизоляция</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                        
-                                
-                            </div>
-                            <div class="necessary__body--question question">
-                                <div class="question__text">Ответим на любой вопрос</div>
-                                <button data-modal="modalCallback" type="button" class="question__btn btn _modal__btn"><span class="btn--helper"></span>Задать вопрос</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Конец Necessary -->
-
-            <!-- Начало Ourworks -->
-
-            <section class="ourworks" id = "ourworks">
-                <div class="ourworks__container container">
-                    <div class="ourworks__inner">
-                        <div class="ourworks__bg ourworks__firstbg">
-                            <img src="img/Background/ourworks_bg-1.png" alt="">
-                        </div>
-                        <div class="ourworks__bg ourworks__secondbg">
-                            <img src="img/Background/ourworks_bg-2.png" alt="">
-                        </div>
-                        <div class="ourworks__info">
-                            <div class="ourworks__title title">Наши <span>работы</span></div>
-                            <div class="ourworks__cats">
-                                <a href="" class="ourworks__cat cat__active">Квартиры</a>
-                                <a href="" class="ourworks__cat">Коттеджи</a>
-                                <a href="" class="ourworks__cat">Коммерческие проекты</a>
-                            </div>
-                        </div>
-
-                        <div class="ourworks__slider">
-                            
-                            <div class="ourworks__container swiper-container">
-                                
-                                <div class="ourworks__wrapper swiper-wrapper">
-                                    <div class="ourworks__slide swiper-slide slide">
-                                        <div class="slide__inner">
-                                            <div class="slide__images">
-                                                <div class="slide__image--block">
-                                                    <div class="slide__image">
-                                                        <img class="ibg" src="img/ourworks/First_slide-1.png" alt="">
-                                                    </div>
-                                                    <div class="slide__image">
-                                                        <img class="ibg" src="img/ourworks/First_slide-2.png" alt="">
-                                                    </div>
-                                                </div>
-                                                <div class="slide__image--block">
-                                                    <div class="slide__image">
-                                                        <img class="ibg" src="img/ourworks/First_slide-3.png" alt="">
-                                                    </div>
-                                                    <div class="slide__image">
-                                                        <img class="ibg" src="img/ourworks/First_slide-4.png" alt="">
-                                                    </div>
-                                                </div>
-                                                
-                                            </div>
-                                            <div class="slide__about">
-                                                <div class="slide__about--title">Стяжка пола в 2-х комнатной квартире в ЖК Павловский квартал</div>
-                                                <ul class="slide__about--list">
-                                                    <li class="slide__about--text about">
-                                                        <img src="img/ourworks/about__img-1.png" alt="">
-                                                        <div class="about__info">
-                                                            <div class="about__info--type">Площадь:</div>
-                                                            <div class="about__info--txt">62м² / 60-70 мм</div>
-                                                        </div>
-                                                    </li>
-                                                    <li class="slide__about--text about">
-                                                        <img src="img/ourworks/about__img-2.png" alt="">
-                                                        <div class="about__info">
-                                                            <div class="about__info--type">Дата:</div>
-                                                            <div class="about__info--txt">15.12.18</div>
-                                                        </div>
-
-                                                    </li>
-                                                    <li class="slide__about--text about">
-                                                        <img src="img/ourworks/about__img-4.png" alt="">
-                                                        <div class="about__info">
-                                                            <div class="about__info--type">Сроки:</div>
-                                                            <div class="about__info--txt">1 день</div>
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                                <div class="slide__order">
-                                                    <button data-modal="modalCost" type="button" class="slide__order--button btn _modal__btn"><span class="btn--helper"></span>Заказать расчет</button>
-                                                    <a href="tel:74951396109" class="slide__order--tel">+7 (495) 139-61-09</a>
-                                                </div>
-                                            </div>
-                                            
-                                        </div>
-                                    </div>
-                                    <div class="ourworks__slide swiper-slide slide">
-                                        <div class="slide__inner">
-                                            <div class="slide__images">
-                                                <div class="slide__image--block">
-                                                    <div class="slide__image">
-                                                        <img class="ibg" src="img/ourworks/First_slide-1.png" alt="">
-                                                    </div>
-                                                    <div class="slide__image">
-                                                        <img class="ibg" src="img/ourworks/First_slide-2.png" alt="">
-                                                    </div>
-                                                </div>
-                                                <div class="slide__image--block">
-                                                    <div class="slide__image">
-                                                        <img class="ibg" src="img/ourworks/First_slide-3.png" alt="">
-                                                    </div>
-                                                    <div class="slide__image">
-                                                        <img class="ibg" src="img/ourworks/First_slide-4.png" alt="">
-                                                    </div>
-                                                </div>
-                                                
-                                               
-                                            </div>
-                                            <div class="slide__about">
-                                                <div class="slide__about--title">Стяжка пола в 2-х комнатной квартире в ЖК Павловский квартал</div>
-                                                <ul class="slide__about--list">
-                                                    <li class="slide__about--text about">
-                                                        <img src="img/ourworks/about__img-1.png" alt="">
-                                                        <div class="about__info">
-                                                            <div class="about__info--type">Площадь:</div>
-                                                            <div class="about__info--txt">62м² / 60-70 мм</div>
-                                                        </div>
-                                                    </li>
-                                                    <li class="slide__about--text about">
-                                                        <img src="img/ourworks/about__img-2.png" alt="">
-                                                        <div class="about__info">
-                                                            <div class="about__info--type">Дата:</div>
-                                                            <div class="about__info--txt">15.12.18</div>
-                                                        </div>
-
-                                                    </li>
-                                                    <li class="slide__about--text about">
-                                                        <img src="img/ourworks/about__img-4.png" alt="">
-                                                        <div class="about__info">
-                                                            <div class="about__info--type">Сроки:</div>
-                                                            <div class="about__info--txt">1 день</div>
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                                <div class="slide__order">
-                                                    <button data-modal="modalCost" type="button" class="slide__order--button btn _modal__btn"><span class="btn--helper"></span>Заказать расчет</button>
-                                                    <a href="tel:74951396109" class="slide__order--tel">+7 (495) 139-61-09</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="ourworks__slide swiper-slide slide">
-                                        <div class="slide__inner">
-                                            <div class="slide__images">
-                                                <div class="slide__image--block">
-                                                    <div class="slide__image">
-                                                        <img class="ibg" src="img/ourworks/First_slide-1.png" alt="">
-                                                    </div>
-                                                    <div class="slide__image">
-                                                        <img class="ibg" src="img/ourworks/First_slide-2.png" alt="">
-                                                    </div>
-                                                </div>
-                                                <div class="slide__image--block">
-                                                    <div class="slide__image">
-                                                        <img class="ibg" src="img/ourworks/First_slide-3.png" alt="">
-                                                    </div>
-                                                    <div class="slide__image">
-                                                        <img class="ibg" src="img/ourworks/First_slide-4.png" alt="">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="slide__about">
-                                                <div class="slide__about--title">Стяжка пола в 2-х комнатной квартире в ЖК Павловский квартал</div>
-                                                <ul class="slide__about--list">
-                                                    <li class="slide__about--text about">
-                                                        <img src="img/ourworks/about__img-1.png" alt="">
-                                                        <div class="about__info">
-                                                            <div class="about__info--type">Площадь:</div>
-                                                            <div class="about__info--txt">62м² / 60-70 мм</div>
-                                                        </div>
-                                                    </li>
-                                                    <li class="slide__about--text about">
-                                                        <img src="img/ourworks/about__img-2.png" alt="">
-                                                        <div class="about__info">
-                                                            <div class="about__info--type">Дата:</div>
-                                                            <div class="about__info--txt">15.12.18</div>
-                                                        </div>
-
-                                                    </li>
-                                                    <li class="slide__about--text about">
-                                                        <img src="img/ourworks/about__img-4.png" alt="">
-                                                        <div class="about__info">
-                                                            <div class="about__info--type">Сроки:</div>
-                                                            <div class="about__info--txt">1 день</div>
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                                <div class="slide__order">
-                                                    <button data-modal="modalCost" type="button" class="slide__order--button btn _modal__btn"><span class="btn--helper"></span>Заказать расчет</button>
-                                                    <a href="tel:74951396109" class="slide__order--tel">+7 (495) 139-61-09</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="ourworks__pagination swiper-pagination"></div>
-
-                                <div class="ourworks__prev swiper-button-prev"></div>
-                                <div class="ourworks__next swiper-button-next"></div>
-                                
-                            </div>
-                            
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Конец Ourworks -->
-
-            <!-- Начало Comments -->
-
-            <section class="content__comments comments">
-                <div class="comments__container container">
-                    <div class="comments__inner">
-                        <div class="comments__info">
-                            <div class="comments__title title">МЫ ДЕЛАЕМ <span>КАЧЕСТВЕННО</span> И <span>НАДОЛГО</span> </div>
-                            <div class="comments__txt">Прочитайте <span>настоящие отзывы</span> о работе с нами от <span>реальных людей</span></div>
-                        </div>
-
-                        <div class="comments__slide--container swiper-container">
-                            <div class="comments__wrapper swiper-wrapper">
-                                <div class="comments__slide swiper-slide">
-                                    <div class="comments__slide--inner">
-                                        <img src="img/comments/comments_slider-2.png" alt="">
-                                    </div>
-                                </div>
-
-                                <div class="comments__slide swiper-slide">
-                                    <div class="comments__slide--inner">
-                                        <img src="img/comments/comments_slider-1.png" alt="">
-                                    </div>
-                                </div>
-
-                                <div class="comments__slide swiper-slide">
-                                    <div class="comments__slide--inner">
-                                        <img src="img/comments/comments_slider-3.png" alt="">
-                                    </div>
-                                </div>
-
-                                <div class="comments__slide swiper-slide">
-                                    <div class="comments__slide--inner">
-                                        <img src="img/comments/comments_slider-2.png" alt="">
-                                    </div>
-                                </div>
-
-                                <div class="comments__slide swiper-slide">
-                                    <div class="comments__slide--inner">
-                                        <img src="img/comments/comments_slider-2.png" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="comments__pagination swiper-pagination"></div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Конец Comments -->
-
-            <!-- Начало Call -->
-
-            <section class="content__call call">
-                <div class="call__container container">
-                    <div class="call__inner">
-                        <div class="call__image">
-                            <img src="img/call/Builder_call.png" alt="">
-                        </div>
-
-                        <div class="call__image call__image--second">
-                            <img src="img/Background/Background_call-pseudo.png" alt="">
-                        </div>
-
-                        <div class="call__item">
-                            <div class="call__item--inner">
-                                <div class="call__item--title title">Убедитесь в нашей <span>эксперности</span> лично, просто позвонив нам:</div>
-                                <a href="tel:74951396109" class="call__item--tel">+7 (495) 139-61-09</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Конец Call -->
-
-            <!-- Начало Hwork -->
-
-            <section class="content__hwork hwork">
-                <div class="hwork__container container">
-                    <div class="hwork__inner">
-                        <div class="hwork__title title">Как мы <span>работаем</span></div>
-
-                        <div class="hwork__items">
-                            <div class="hwork__item">
-                                <div class="hwork__item--img">
-                                    <img data-src="img/hwork/hwork_item-1.png" src="img/gif/1x1.png" alt="">
-                                </div>
-                                <div class="hwork__item--text">Вы оставляете заявку</div>
-                            </div>
-    
-                            <div class="hwork__item">
-                                <div class="hwork__item--img">
-                                    <img data-src="img/hwork/hwork_item-2.png" src="img/gif/1x1.png" alt="">
-                                </div>
-                                <div class="hwork__item--text">Бесплатный выезд замерщика</div>
-                            </div>
-    
-                            <div class="hwork__item">
-                                <div class="hwork__item--img">
-                                    <img data-src="img/hwork/hwork_item-3.png" src="img/gif/1x1.png" alt="">
-                                </div>
-                                <div class="hwork__item--text">Согласование стоимости и сроков</div>
-                            </div>
-    
-                            <div class="hwork__item">
-                                <div class="hwork__item--img">
-                                    <img data-src="img/hwork/hwork_item-4.png" src="img/gif/1x1.png" alt="">
-                                </div>
-                                <div class="hwork__item--text">Выезд бригады, заключение договора, аванс</div>
-                            </div>
-    
-                            <div class="hwork__item">
-                                <div class="hwork__item--img">
-                                    <img data-src="img/hwork/hwork_item-5.png" src="img/gif/1x1.png" alt="">
-                                </div>
-                                <div class="hwork__item--text">Выполнение работ</div>
-                            </div>
-    
-                            <div class="hwork__item">
-                                <div class="hwork__item--img">
-                                    <img data-src="img/hwork/hwork_item-6.png" src="img/gif/1x1.png" alt="">
-                                </div>
-                                <div class="hwork__item--text">Подписание акта, окончательный расчет</div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </section>
-
-            <!-- Конец Hwork -->
-
-            <section class="content__spollers spoller">
-                <div class="spoller__container container">
-                    <div class="spoller__inner">
-                        <div class="spoller__title title">Часто задаваемые <span>вопросы</span></div>
-                        <div class="spoller__items" data-type="" id="spoller-parent">
-                            <div class="spoller__item" id="spoller">
-                                <div class="spoller__item--questions">
-                                    <div class="spoller__item--question">
-                                        Сколько стоит стяжка пола?
-                                    </div>
-                                    <span class="spoller__item--btn"></span>
-                                </div>
-                                <div class="spoller__item--answer">
-                                    Стоимость работ зависит от общей площади и толщины стяжки, высоты подачи раствора (этажность), территориального расположения объекта. Для расчета стоимости Вашей стяжки свяжитесь с нами по телефону или оставьте заявку. Минимальный заказ: 40 000 рублей.
-                                </div>
-                            </div>
-
-                            <div class="spoller__item" id="spoller">
-                                <div class="spoller__item--questions">
-                                    <div class="spoller__item--question">
-                                        Сколько по времени займет работа?
-                                    </div>
-                                    <span class="spoller__item--btn"></span>
-                                </div>
-                                <div class="spoller__item--answer" id="answer">
-                                    Стоимость работ зависит от общей площади и толщины стяжки, высоты подачи раствора (этажность), территориального расположения объекта. Для расчета стоимости Вашей стяжки свяжитесь с нами по телефону или оставьте заявку. Минимальный заказ: 40 000 рублей.
-                                </div>
-                            </div>
-
-                            <div class="spoller__item" id="spoller">
-                                <div class="spoller__item--questions">
-                                    <div class="spoller__item--question">
-                                        Каким материалом работаете?
-                                    </div>
-                                    <span class="spoller__item--btn"></span>
-                                </div>
-                                <div class="spoller__item--answer">
-                                    Стоимость работ зависит от общей площади и толщины стяжки, высоты подачи раствора (этажность), территориального расположения объекта. Для расчета стоимости Вашей стяжки свяжитесь с нами по телефону или оставьте заявку. Минимальный заказ: 40 000 рублей.
-                                </div>
-                            </div>
-
-                            <div class="spoller__item" id="spoller">
-                                <div class="spoller__item--questions">
-                                    <div class="spoller__item--question">
-                                        Что делать раньше: стяжку пола или штукатурку стен?
-                                    </div>
-                                    <span class="spoller__item--btn"></span>
-                                </div>
-                                <div class="spoller__item--answer">
-                                    Стоимость работ зависит от общей площади и толщины стяжки, высоты подачи раствора (этажность), территориального расположения объекта. Для расчета стоимости Вашей стяжки свяжитесь с нами по телефону или оставьте заявку. Минимальный заказ: 40 000 рублей.
-                                </div>
-                            </div>
-
-                            <div class="spoller__item" id="spoller">
-                                <div class="spoller__item--questions">
-                                    <div class="spoller__item--question">
-                                        Кто приедет после заказа?
-                                    </div>
-                                    <span class="spoller__item--btn"></span>
-                                </div>
-                                <div class="spoller__item--answer">
-                                    Стоимость работ зависит от общей площади и толщины стяжки, высоты подачи раствора (этажность), территориального расположения объекта. Для расчета стоимости Вашей стяжки свяжитесь с нами по телефону или оставьте заявку. Минимальный заказ: 40 000 рублей.
-                                </div>
-                            </div>
-
-                            <div class="spoller__item" id="spoller">
-                                <div class="spoller__item--questions">
-                                    <div class="spoller__item--question">
-                                        Что входит в стоимость?
-                                    </div>
-                                    <span class="spoller__item--btn"></span>
-                                </div>
-                                <div class="spoller__item--answer">
-                                    Стоимость работ зависит от общей площади и толщины стяжки, высоты подачи раствора (этажность), территориального расположения объекта. Для расчета стоимости Вашей стяжки свяжитесь с нами по телефону или оставьте заявку. Минимальный заказ: 40 000 рублей.
-                                </div>
-                            </div>
-
-                            <div class="spoller__item" id="spoller">
-                                <div class="spoller__item--questions">
-                                    <div class="spoller__item--question">
-                                        В каких городах оказываете услуги?
-                                    </div>
-                                    <span class="spoller__item--btn"></span>
-                                </div>
-                                <div class="spoller__item--answer">
-                                    Стоимость работ зависит от общей площади и толщины стяжки, высоты подачи раствора (этажность), территориального расположения объекта. Для расчета стоимости Вашей стяжки свяжитесь с нами по телефону или оставьте заявку. Минимальный заказ: 40 000 рублей.
-                                </div>
-                            </div>
-                            
-                        </div>
-
-                        <div class="spoller__questions">
-                            <div class="spoller__questions--inner">
-                                <div class="spoller__questions--img">
-                                    <img src="img/Background/Background_call-pseudo.png" alt="">
-                                </div>
-                                <div class="spoller__questions--body questions">
-                                    <div class="questions__inner">
-                                        <div class="questions__title title"><span>ОСТАЛИСЬ ВОПРОСЫ?</span></div>
-                                        <div class="questions__text">Оставьте ваш номер телефона, мы перезвоним и согласуем все вопросы.</div>
-                                        <form for="" class="questions__input">
-                                            <input type="tel" name="tel" placeholder="+7( --- ) --- -- --" id="tel">
-                                            <button type="submit" class="questions__btn btn"><span class="btn--helper"></span>Жду звонка</button>
-                                        </form>
-                                        <div class="questions__tel">
-                                            или позвоните нам
-                                            <a href="tel:74951396109"><span>+7 (495) 139-61-09</span></a>
-                                        </div>
-                                    </div>   
+                            <div class="footer__location">
+                                <h2 class="footer__location--title footer__title">Our Location</h2>
+                                <div class="footer__location--map" data-map="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1563.3433881196054!2d151.2154976350227!3d-33.87395929635325!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12ae147592ad8d%3A0xed164f56880f3f8a!2sGroup%20GSA!5e0!3m2!1sru!2s!4v1627384205403!5m2!1sru!2s">
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
+                <div class="footer__copyright">
+                    <div class="footer__copyright--container container">
+                        <div class="footer__copyright--inner">
+                            <div class="footer__copyright--author">
+                                BUILT WITH <i class="fas fa-heart"></i> WP THEME BY alitstudio
+                            </div>
+                            <nav class="footer__nav">
+                                <a href="" class="footer__nav--item">Home</a>
+                                <a href="" class="footer__nav--item">Pages</a>
+                                <a href="" class="footer__nav--item">Shortcode</a>
+                                <a href="" class="footer__nav--item">Features</a>
+                                <a href="" class="footer__nav--item">Blog</a>
+                                <a href="" class="footer__nav--item">Portfolio</a>
+                                <a href="" class="footer__nav--item">Shop</a>
+                            </nav>
 
-            <section class="content__map map" id = "contacts">
-                <button class="map__button btn"><span class="btn--helper"></span>МЫ НА КАРТЕ</button>
-                <div class="map__inner" data-map = "https://yandex.ru/map-widget/v1/?um=constructor%3A6fd61ba7ba787fb370368affaf09eebba1d86ac15fdd43d382bb5d13049fe95d&amp;source=constructor">
-                    
-                </div>
-            </section>
-        </div>
-
-
-
-
-<!-- Конец контентной части -->
-
-
-<!-- Начало Футера -->
-
-        <footer class="footer">
-            <div class="footer__container">
-                <div class="footer__inner">
-                    <div class="footer__logo">
-                        <div class="footer__logo--img">
-                            <img src="img/footer/Logotype-footer.svg" alt="">
-                        </div>
-                        <div class="footer__logo--info">
-                            <div class="footer__logo--title">ООО «МСК»</div>
-                            <div class="footer__logo--text">Полусухая стяжка пола в Москве и области</div>
                         </div>
                     </div>
-
-                    <a href="#" class="footer__link">Политика конфиденциальности</a>
-                    <a href="#" class="footer__link">Реквизиты</a>
                 </div>
             </div>
         </footer>
+         <!-- Конец Footer -->
+    </div>  
+
+     <!-- Конец Wrapper -->
 
 
-<!-- Конец Футера-->
-
-<!-- Модальные Окна -->
-
-<div class="modal__cost modal" id = "modalCost">
-    <div class="modal__cost--inner modal__inner">
-        <div class="modal__cost--body modal__body">
-            <button class="modal__cost--button modal__close"></button>
-            <div class="modal__info">
-                <div class="modal__cost--title modal__title"><span>РАСЧЕТ</span> СТОИМОСТИ</div>
-                <div class="modal__cost--text">Рассчитайте стоимость полусухой стяжки без выезда специалиста</div>
-            </div>
-            <form for="" class="modal__cost--form form">
-                <div class="form__input--size">
-                    <div class="form__input--img">
-                        <img src="img/modal/cost/size.svg" alt="">
-                    </div>
-                    <input class="form__size form__input" type="text" placeholder="Площадь помещения (м²)">
-                </div>
-
-                <div class="form__input--tel">
-                    <div class="form__input--img">
-                        <img src="img/modal/cost/tel.svg" alt="">
-                    </div>
-                    <input class="form__tel form__input" type="text" placeholder="+7 ( --- ) --- -- --" id="modalTel">
-                </div>
-                <button type="submit" class="form__button btn"><span class="btn--helper"></span> Рассчитать</button>
-
-                <div class="form__checkbox">
-                    <label for="checkbox">Нажимая “Рассчитать”, Вы даете согласие на обработку персональных данных.</label>
-                    <input type="checkbox" class="checkbox" id = "checkbox">
-                    <img src="img/modal/cost/check-mark.svg" alt="">
-                </div>
-            </form>
-            
-            <div class="modal__contacts">
-                <div class="modal__contacts--txt">
-                    <span>Свяжитесь с нами</span><br>
-                    через мессенджеры
-                </div>
-                <div class="modal__contacts--imgs">
-                    <a href="tel:74951396109" target="_blank" class="modal__contacts--img">
-                        <img class="modal__contacts--img--whatsapp" src="img/modal/cost/whatsapp.png" alt="">
-                    </a>
-                    <a href="https://web.telegram.org/" class="modal__contacts--img">
-                        <img class="modal__contacts--img--whatsapp" src="img/modal/cost/telegram.png" alt="">
-                    </a>   
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<div class="modal__callback modal" id = "modalCallback">
-    <div class="modal__callback--inner modal__inner">
-        <div class="modal__callback--body modal__body">
-            <button class="modal__callback--button modal__close"></button>
-            <div class="modal__info">
-                <div class="modal__callback--title modal__title">ЗАКАЗ <span>ЗВОНКА</span></div>
-                <div class="modal__callback--text">Оставьте свои контакты и мы свяжемся с вами в ближайшее время</div>
-            </div>
-            <form for="" class="modal__callback--form form">
-                <div class="form__input--size">
-                    <div class="form__input--img">
-                        <img src="img/modal/cost/user.png" alt="">
-                    </div>
-                    <input class="form__size form__input" type="text" placeholder="Введите имя">
-                </div>
-
-                <div class="form__input--tel">
-                    <div class="form__input--img">
-                        <img src="img/modal/cost/tel.svg" alt="">
-                    </div>
-                    <input class="form__tel form__input" type="text" placeholder="+7 ( --- ) --- -- --" id="modalTel">
-                </div>
-                <button type="submit" class="form__button btn"><span class="btn--helper"></span> Рассчитать</button>
-
-                <div class="form__checkbox">
-                    <label for="checkbox">Нажимая “Заказать звонок”, Вы даете согласие на обработку персональных данных.</label>
-                    <input type="checkbox" class="checkbox" id = "checkbox">
-                    <img src="img/modal/cost/check-mark.svg" alt="">
-                </div>
-            </form>
-            
-            <div class="modal__contacts">
-                <div class="modal__contacts--txt">
-                    <span>Свяжитесь с нами</span><br>
-                    через мессенджеры
-                </div>
-                <div class="modal__contacts--imgs">
-                    <a href="tel:74951396109" target="_blank" class="modal__contacts--img">
-                        <img class="modal__contacts--img--whatsapp" src="img/modal/cost/whatsapp.png" alt="">
-                    </a>
-                    <a href="https://web.telegram.org/" class="modal__contacts--img">
-                        <img class="modal__contacts--img--whatsapp" src="img/modal/cost/telegram.png" alt="">
-                    </a>   
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Модальные Окна -->
-
-
-    </div>
-
-
+     
+     <script src="js/main.js"></script>
+     <script src="js/lazyLoading.js"></script>
+     <script type="module" src="js/swiper.js"></script>
+     <script src="js/ibg.js"></script>
     
-<!-- Js-файлы -->
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
-    <script src="js/jquery.maskedinput.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="js/swiper.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/telMask.js"></script>
-    <script src="js/lazyLoading.js"></script>
+    
     
 </body>
 </html>
