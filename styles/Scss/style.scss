@@ -3,7 +3,19 @@
 @import "mixin.scss";
 
 //Шрифты по умолчанию//
+@import "fonts.scss";
+
 $font-size: 16;
+
+$font-family-MontserratBlack: MontserratBlack;
+$font-family-MontserratRegular: MontserratRegular;
+$font-family-PoppinsLight: PoppinsLight;
+$font-family-PoppinsSemiBold: PoppinsSemiBold;
+$font-family-PoppinsBold: PoppinsBold;
+$font-family-LatoItalic: LatoItalic;
+$font-family-LatoRegular: LatoRegular;
+$font-family-DroidSerifItalic: DroidSerifItalic;
+$font-family-DroidSerif: DroidSerif;
 
 //Переменные//
 $maxWidthContainer: 1120;
@@ -43,7 +55,7 @@ html{
 
 body{
     color: $maincolor;
-    font-family: 'Montserrat', sans-serif;
+    font-family: $font-family-MontserratRegular;
     font-weight: 300;
     margin: 0;
     height: 100%;
