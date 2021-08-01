@@ -65,7 +65,7 @@
 
     &__title{
         font-size: 30px;
-        font-weight: 700;
+        font-family: $font-family-MontserratSemiBold;
         text-transform: uppercase;
         text-align: center;
         margin: 60px 0px 20px 0px;
@@ -82,7 +82,7 @@
 
         &--text{
             font-size: 18px;
-            font-weight: 400;
+            font-family: $font-family-MontserratRegular;
             max-width: 322px;
             text-align: center;
         }
@@ -114,11 +114,11 @@
 
         &--txt{
             font-size: 16px;
-            font-weight: 400;
+            font-family: $font-family-MontserratRegular;
             text-align: center;
             margin: 0px 0px 15px 0px;
             span{
-                font-weight: 500;
+                font-family: $font-family-MontserratMedium;
             }
         }
     }

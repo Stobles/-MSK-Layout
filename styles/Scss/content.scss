@@ -31,7 +31,7 @@
     }
     &__title{
         @include adaptiv-value('font-size',40,25,1);
-        font-weight: 700;
+        font-family: $font-family-MontserratSemiBold;
         text-transform: uppercase;
         line-height: 48px;
         margin: 0px 0px 14px 0px;
@@ -46,7 +46,7 @@
 
     &__text{
         @include adaptiv-value('font-size',22,16,1);
-        font-weight: 300;
+        font-family: $font-family-MontserratLight;
         line-height: 26px;
         margin: 0px 0px 26px 0px;
         @media(max-width: $md1+px){
@@ -67,13 +67,13 @@
     }
     &__title{
         @include adaptiv-value('font-size',35,20,1);
-        font-weight: 600;
+        font-family: $font-family-MontserratSemiBold;
         margin: 0px 0px 35px 0px;
     }
 
     &__text{
         @include adaptiv-value('font-size',20,12,1);
-        font-weight: 300;
+        font-family: $font-family-MontserratLight;
     }
     & ul{
         @media(max-width: $md1+px){
@@ -228,7 +228,7 @@
         font-weight: 500;
         & span{
             @include adaptiv-value('font-size',35,18,1);
-            font-weight: 700;
+            font-family: $font-family-MontserratSemiBold;
             color: $orangeColor;
         }
         padding: 0px 0px 0px 10px;
@@ -326,7 +326,7 @@
         &--txt{
             display: flex;
             @include adaptiv-value('font-size',20,15,1);
-            font-weight: 700;
+            font-family: $font-family-MontserratSemiBold;
             padding: 0px 0px 20px 0px;
             @media (max-width: $md4 + px) {
                 text-align: center;
@@ -335,7 +335,7 @@
 
         &--tel{
             @include adaptiv-value('font-size',28,24,1);
-            font-weight: 800;
+            font-family: $font-family-MontserratSemiBold;
             color: $maincolor;
         }
     }
@@ -346,7 +346,7 @@
     &__title{
         display: inline-block;
         @include adaptiv-value('font-size',32,20,1);
-        font-weight: 700;
+        font-family: $font-family-MontserratSemiBold;
         text-transform: uppercase;
         text-align: center;
         margin: 0 0 20px 13%;
@@ -362,7 +362,7 @@
     &__text{
         p {
             @include adaptiv-value('font-size',16,11,1);
-            font-weight: 400;
+            font-family: $font-family-MontserratRegular;
             max-width: 570px;
             line-height: 19px;
             &:first-child{
@@ -398,7 +398,7 @@
         }
         align-items: center;
         @include adaptiv-value('font-size',14,11,1);
-        font-weight: 400;
+        font-family: $font-family-MontserratRegular;
         text-align: center;
         span{
             color: $orangeColor;
@@ -461,7 +461,7 @@
         padding: 0px 0px 40px 0px;
         &--title{
             @include adaptiv-value('font-size',32,20,1);
-            font-weight: 700;
+            font-family: $font-family-MontserratSemiBold;
             padding: 0px 0px 16px 0px;
             text-transform: uppercase;
             line-height: 120%;
@@ -472,7 +472,7 @@
 
         &--txt{
             @include adaptiv-value('font-size',16,13,1);
-            font-weight: 300;
+            font-family: $font-family-MontserratLight;
             line-height: 120%;
         }
 
@@ -524,13 +524,13 @@
 
             &--title{
                 @include adaptiv-value('font-size',18,16,1);
-                font-weight: 700;
+                font-family: $font-family-MontserratSemiBold;
                 
             }
 
             &--model{
                 @include adaptiv-value('font-size',14,11,1);
-                font-weight: 300;
+                font-family: $font-family-MontserratLight;
                 padding: 8px 0px 0px 0px;
             }
         }
@@ -621,13 +621,13 @@
 
             span{
                 font-size: 14px;
-                font-weight: 500;
+                font-family: $font-family-MontserratMedium;
             }
         }
 
         &--price{
             font-size: 30px;
-            font-weight: 700;
+            font-family: $font-family-MontserratSemiBold;
             text-align: center;
             padding: 0px 0px 35px;
         }
@@ -645,7 +645,7 @@
             border-radius: 15px 15px 0px 0px;
             color: #fff;
             font-size: 17px;
-            font-weight: 500;
+            font-family: $font-family-MontserratMedium;
             line-height: 120%;
         }
 
@@ -709,7 +709,7 @@
 
         &--title{
             font-size: 17px;
-            font-weight: 500;
+            font-family: $font-family-MontserratMedium;
             padding: 26px 0px 41px 0px;
         }
 
@@ -774,10 +774,10 @@
             align-items: center;
             flex: 1 1 435px;
             @include adaptiv-value('font-size',16,12,1);
-            font-weight: 300;
+            font-family: $font-family-MontserratLight;
             @include adaptiv-value('padding-left',27,20,1);
             span{
-                font-weight: 500;
+                font-family: $font-family-MontserratLight;
             }
             @media(max-width: $md3+px){
                 padding: 0px 0px 15px 10px;
@@ -886,7 +886,7 @@
             color: #fff;
             line-height: 120%;
             padding: 0px 0px 0px 10px;
-            font-weight: 300;
+            font-family: $font-family-MontserratLight;
         }
 
         img{
@@ -988,7 +988,7 @@
     &__cats{
         display: flex;
         font-size: 18px;
-        font-weight: 500;
+        font-family: $font-family-MontserratMedium;
         justify-content: center;
     }
 
@@ -1031,7 +1031,7 @@
     .swiper-button-prev::after{
         color: #fff;
         font-size: 20px;
-        font-weight: 600;
+        font-family: $font-family-MontserratMedium;
         padding: 0px 5px 0px 0px;
     }
 
@@ -1048,7 +1048,7 @@
     .swiper-button-next::after{
         color: #fff;
         font-size: 20px;
-        font-weight: 600;
+        font-family: $font-family-MontserratMedium;
         padding: 0px 0px 0px 5px;
     }
 
@@ -1132,7 +1132,7 @@
 
         &--title{
             @include adaptiv-value('font-size',20,16,1);
-            font-weight: 600;
+            font-family: $font-family-MontserratMedium;
             padding: 4px 0px 26px;
         }
     }
@@ -1161,13 +1161,13 @@
 
         &--tel{
             font-size: 18px;
-            font-weight: 700;
+            font-family: $font-family-MontserratSemiBold;
             color: $maincolor;
         }
 
         &--button{
             font-size: 16px;
-            font-weight: 700;
+            font-family: $font-family-MontserratSemiBold;
             max-height: 50px;
         }
     }
@@ -1185,7 +1185,7 @@
         width: 100%;
         padding: 0px 0px 0px 20px;
         @include adaptiv-value('font-size',18,14,1);
-        font-weight: 500;
+        font-family: $font-family-MontserratMedium;
 
         &--txt{
             @include adaptiv-value('font-size',16,13,1);
@@ -1218,7 +1218,7 @@
 
     &__txt{
         @include adaptiv-value('font-size',18,14,1);
-        font-weight: 300;
+        font-family: $font-family-MontserratLight;
         text-align: center;
         padding: 20px 0px 0px 0px;
         span{
@@ -1340,7 +1340,7 @@
 
         &--tel{
             @include adaptiv-value('font-size',50,26,1);
-            font-weight: 700;
+            font-family: $font-family-MontserratSemiBold;
             color: $orangeColor;
         }
     
@@ -1392,7 +1392,7 @@
         &--text{
             color: #fff;
             font-size: 16px;
-            font-weight: 500;
+            font-family: $font-family-MontserratMedium;
             text-align: center;
         }
     }
@@ -1436,7 +1436,7 @@
             line-height: 120%;
             align-items: center;
             @include adaptiv-value('font-size',16,13,1);
-            font-weight: 500;
+            font-family: $font-family-MontserratMedium;
             z-index: 1;
             &::before{
                 content: '';
@@ -1510,7 +1510,7 @@
             bottom: 20px;
             line-height: 20px;
             padding: 0px 25px 0px 0px;
-            font-weight: 400;
+            font-family: $font-family-MontserratRegular;
             transition: all .1s;
         }
 
@@ -1581,7 +1581,7 @@
         text-align: center;
 
         @include adaptiv-value('font-size',18,13,1);
-        font-weight: 500;
+        font-family: $font-family-MontserratMedium;
     }
 
     &__inner{
@@ -1643,11 +1643,11 @@
         flex-direction: column;
         align-items: center;
         @include adaptiv-value('font-size',19,15,1);
-        font-weight: 500;
+        font-family: $font-family-MontserratMedium;
         span{
             color: $orangeColor;
             @include adaptiv-value('font-size',35,24,1);
-            font-weight: 700;
+            font-family: $font-family-MontserratSemiBold;
         }
 
         a{
@@ -1688,9 +1688,17 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0px 0px 50px 0px;
 
     &__inner{
         display: none;
+    }
+
+    &__body{
+        width: 100%;
+        height: 400px;
+        iframe{
+            width: 100%;
+            height: 100%;
+        }
     }
 }

@@ -1,10 +1,22 @@
 @font-face {
-  font-family: MontserratBlack;
-  src: url(../../fonts/Montserrat-Black.ttf);
+  font-family: MontserratSemiBold;
+  src: url(../../fonts/Montserrat-SemiBold.ttf);
+  font-display: swap;
 }
 @font-face {
   font-family: MontserratRegular;
   src: url(../../fonts/Montserrat-Regular.ttf);
+  font-display: swap;
+}
+@font-face {
+  font-family: MontserratLight;
+  src: url(../../fonts/Montserrat-Light.ttf);
+  font-display: swap;
+}
+@font-face {
+  font-family: MontserratMedium;
+  src: url(../../fonts/Montserrat-Medium.ttf);
+  font-display: swap;
 }
 * {
   -webkit-box-sizing: border-box;
@@ -176,7 +188,7 @@ body.lock {
 }
 .header__logo--info--title {
   font-size: 16px;
-  font-weight: 700;
+  font-family: MontserratSemiBold;
   line-height: 18px;
 }
 @media (max-width: 1120px) {
@@ -341,7 +353,7 @@ body.lock {
   color: #212121;
   padding-right: 20px;
   font-size: 20px;
-  font-weight: 500;
+  font-family: MontserratMedium;
 }
 @media (max-width: 991.98px) {
   .contacts__callback--whatsapp {
@@ -477,7 +489,7 @@ body.lock {
   cursor: pointer;
   -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
-  font-weight: 400;
+  font-family: MontserratRegular;
 }
 @media (max-width: 1120px) {
   .nav__item {
@@ -587,7 +599,7 @@ body.lock {
 }
 .info__title {
   font-size: 40px;
-  font-weight: 700;
+  font-family: MontserratSemiBold;
   text-transform: uppercase;
   line-height: 48px;
   margin: 0px 0px 14px 0px;
@@ -607,7 +619,7 @@ body.lock {
 }
 .info__text {
   font-size: 22px;
-  font-weight: 300;
+  font-family: MontserratLight;
   line-height: 26px;
   margin: 0px 0px 26px 0px;
 }
@@ -645,7 +657,7 @@ body.lock {
 }
 .list__title {
   font-size: 35px;
-  font-weight: 600;
+  font-family: MontserratSemiBold;
   margin: 0px 0px 35px 0px;
 }
 @media (max-width: 1120px) {
@@ -655,7 +667,7 @@ body.lock {
 }
 .list__text {
   font-size: 20px;
-  font-weight: 300;
+  font-family: MontserratLight;
 }
 @media (max-width: 1120px) {
   .list__text {
@@ -923,7 +935,7 @@ body.lock {
 }
 .date__text span {
   font-size: 35px;
-  font-weight: 700;
+  font-family: MontserratSemiBold;
   color: #FF5B14;
 }
 @media (max-width: 1120px) {
@@ -1062,7 +1074,7 @@ body.lock {
   display: -ms-flexbox;
   display: flex;
   font-size: 20px;
-  font-weight: 700;
+  font-family: MontserratSemiBold;
   padding: 0px 0px 20px 0px;
 }
 @media (max-width: 1120px) {
@@ -1077,7 +1089,7 @@ body.lock {
 }
 .experts__contacts--tel {
   font-size: 28px;
-  font-weight: 800;
+  font-family: MontserratSemiBold;
   color: #212121;
 }
 @media (max-width: 1120px) {
@@ -1092,7 +1104,7 @@ body.lock {
 .hist__title {
   display: inline-block;
   font-size: 32px;
-  font-weight: 700;
+  font-family: MontserratSemiBold;
   text-transform: uppercase;
   text-align: center;
   margin: 0 0 20px 13%;
@@ -1113,7 +1125,7 @@ body.lock {
 }
 .hist__text p {
   font-size: 16px;
-  font-weight: 400;
+  font-family: MontserratRegular;
   max-width: 570px;
   line-height: 19px;
 }
@@ -1173,7 +1185,7 @@ body.lock {
       -ms-flex-align: center;
           align-items: center;
   font-size: 14px;
-  font-weight: 400;
+  font-family: MontserratRegular;
   text-align: center;
 }
 @media (min-width: 991.98px) {
@@ -1269,7 +1281,7 @@ body.lock {
 }
 .materials__info--title {
   font-size: 32px;
-  font-weight: 700;
+  font-family: MontserratSemiBold;
   padding: 0px 0px 16px 0px;
   text-transform: uppercase;
   line-height: 120%;
@@ -1284,7 +1296,7 @@ body.lock {
 }
 .materials__info--txt {
   font-size: 16px;
-  font-weight: 300;
+  font-family: MontserratLight;
   line-height: 120%;
 }
 @media (max-width: 1120px) {
@@ -1370,7 +1382,7 @@ body.lock {
 }
 .materials .materials__body--item--title {
   font-size: 18px;
-  font-weight: 700;
+  font-family: MontserratSemiBold;
 }
 @media (max-width: 1120px) {
   .materials .materials__body--item--title {
@@ -1379,7 +1391,7 @@ body.lock {
 }
 .materials .materials__body--item--model {
   font-size: 14px;
-  font-weight: 300;
+  font-family: MontserratLight;
   padding: 8px 0px 0px 0px;
 }
 @media (max-width: 1120px) {
@@ -1471,11 +1483,11 @@ body.lock {
 }
 .services__card--prop span {
   font-size: 14px;
-  font-weight: 500;
+  font-family: MontserratMedium;
 }
 .services__card--price {
   font-size: 30px;
-  font-weight: 700;
+  font-family: MontserratSemiBold;
   text-align: center;
   padding: 0px 0px 35px;
 }
@@ -1497,7 +1509,7 @@ body.lock {
   border-radius: 15px 15px 0px 0px;
   color: #fff;
   font-size: 17px;
-  font-weight: 500;
+  font-family: MontserratMedium;
   line-height: 120%;
 }
 
@@ -1565,7 +1577,7 @@ body.lock {
 }
 .works__card--title {
   font-size: 17px;
-  font-weight: 500;
+  font-family: MontserratMedium;
   padding: 26px 0px 41px 0px;
 }
 .works__card--checkmark {
@@ -1647,7 +1659,7 @@ body.lock {
       -ms-flex: 1 1 435px;
           flex: 1 1 435px;
   font-size: 16px;
-  font-weight: 300;
+  font-family: MontserratLight;
   padding-left: 27px;
 }
 @media (max-width: 1120px) {
@@ -1661,7 +1673,7 @@ body.lock {
   }
 }
 .works__calc--text span {
-  font-weight: 500;
+  font-family: MontserratLight;
 }
 @media (max-width: 767.98px) {
   .works__calc--text {
@@ -1791,7 +1803,7 @@ body.lock {
   color: #fff;
   line-height: 120%;
   padding: 0px 0px 0px 10px;
-  font-weight: 300;
+  font-family: MontserratLight;
 }
 .necessary li img {
   padding: 4px 0px 0px 0px;
@@ -1896,7 +1908,7 @@ body.lock {
   display: -ms-flexbox;
   display: flex;
   font-size: 18px;
-  font-weight: 500;
+  font-family: MontserratMedium;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1944,7 +1956,7 @@ body.lock {
 .ourworks .swiper-button-prev::after {
   color: #fff;
   font-size: 20px;
-  font-weight: 600;
+  font-family: MontserratMedium;
   padding: 0px 5px 0px 0px;
 }
 .ourworks .swiper-button-prev {
@@ -1961,7 +1973,7 @@ body.lock {
 .ourworks .swiper-button-next::after {
   color: #fff;
   font-size: 20px;
-  font-weight: 600;
+  font-family: MontserratMedium;
   padding: 0px 0px 0px 5px;
 }
 .ourworks .swiper-button-next {
@@ -2076,7 +2088,7 @@ body.lock {
 }
 .slide__about--title {
   font-size: 20px;
-  font-weight: 600;
+  font-family: MontserratMedium;
   padding: 4px 0px 26px;
 }
 @media (max-width: 1120px) {
@@ -2128,12 +2140,12 @@ body.lock {
 }
 .slide__order--tel {
   font-size: 18px;
-  font-weight: 700;
+  font-family: MontserratSemiBold;
   color: #212121;
 }
 .slide__order--button {
   font-size: 16px;
-  font-weight: 700;
+  font-family: MontserratSemiBold;
   max-height: 50px;
 }
 
@@ -2158,7 +2170,7 @@ body.lock {
   width: 100%;
   padding: 0px 0px 0px 20px;
   font-size: 18px;
-  font-weight: 500;
+  font-family: MontserratMedium;
 }
 @media (max-width: 1120px) {
   .about__info {
@@ -2192,7 +2204,7 @@ body.lock {
 }
 .comments__txt {
   font-size: 18px;
-  font-weight: 300;
+  font-family: MontserratLight;
   text-align: center;
   padding: 20px 0px 0px 0px;
 }
@@ -2393,7 +2405,7 @@ body.lock {
 }
 .call__item--tel {
   font-size: 50px;
-  font-weight: 700;
+  font-family: MontserratSemiBold;
   color: #FF5B14;
 }
 @media (max-width: 1120px) {
@@ -2457,7 +2469,7 @@ body.lock {
 .hwork__item--text {
   color: #fff;
   font-size: 16px;
-  font-weight: 500;
+  font-family: MontserratMedium;
   text-align: center;
 }
 
@@ -2506,7 +2518,7 @@ body.lock {
       -ms-flex-align: center;
           align-items: center;
   font-size: 16px;
-  font-weight: 500;
+  font-family: MontserratMedium;
   z-index: 1;
 }
 @media (max-width: 1120px) {
@@ -2595,7 +2607,7 @@ body.lock {
   bottom: 20px;
   line-height: 20px;
   padding: 0px 25px 0px 0px;
-  font-weight: 400;
+  font-family: MontserratRegular;
   -webkit-transition: all 0.1s;
   transition: all 0.1s;
 }
@@ -2679,7 +2691,7 @@ body.lock {
   margin: 0px 30px 35px 30px;
   text-align: center;
   font-size: 18px;
-  font-weight: 500;
+  font-family: MontserratMedium;
 }
 @media (max-width: 1120px) {
   .questions__text {
@@ -2805,7 +2817,7 @@ body.lock {
       -ms-flex-align: center;
           align-items: center;
   font-size: 19px;
-  font-weight: 500;
+  font-family: MontserratMedium;
 }
 @media (max-width: 1120px) {
   .questions__tel {
@@ -2815,7 +2827,7 @@ body.lock {
 .questions__tel span {
   color: #FF5B14;
   font-size: 35px;
-  font-weight: 700;
+  font-family: MontserratSemiBold;
 }
 @media (max-width: 1120px) {
   .questions__tel span {
@@ -2858,10 +2870,17 @@ body.lock {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 0px 0px 50px 0px;
 }
 .map__inner {
   display: none;
+}
+.map__body {
+  width: 100%;
+  height: 400px;
+}
+.map__body iframe {
+  width: 100%;
+  height: 100%;
 }
 
 .footer {
@@ -2920,7 +2939,7 @@ body.lock {
 }
 .footer__logo--title {
   font-size: 16px;
-  font-weight: 700;
+  font-family: MontserratSemiBold;
   line-height: 18px;
 }
 @media (max-width: 1120px) {
@@ -2931,7 +2950,7 @@ body.lock {
 .footer__logo--text {
   font-size: 13px;
   line-height: 13px;
-  font-weight: 300;
+  font-family: MontserratLight;
 }
 @media (max-width: 1120px) {
   .footer__logo--text {
@@ -3035,7 +3054,7 @@ body.lock {
 }
 .modal__title {
   font-size: 30px;
-  font-weight: 700;
+  font-family: MontserratSemiBold;
   text-transform: uppercase;
   text-align: center;
   margin: 60px 0px 20px 0px;
@@ -3048,7 +3067,7 @@ body.lock {
 }
 .modal--text {
   font-size: 18px;
-  font-weight: 400;
+  font-family: MontserratRegular;
   max-width: 322px;
   text-align: center;
 }
@@ -3089,12 +3108,12 @@ body.lock {
 }
 .modal__contacts--txt {
   font-size: 16px;
-  font-weight: 400;
+  font-family: MontserratRegular;
   text-align: center;
   margin: 0px 0px 15px 0px;
 }
 .modal__contacts--txt span {
-  font-weight: 500;
+  font-family: MontserratMedium;
 }
 
 .form {
@@ -3213,7 +3232,7 @@ body.lock {
 .title {
   font-size: 32px;
   text-align: center;
-  font-weight: 700;
+  font-family: MontserratSemiBold;
   text-transform: uppercase;
   color: #212121;
 }
@@ -3243,7 +3262,7 @@ body.lock {
           justify-content: center;
   border-radius: 10px;
   text-align: center;
-  font-weight: 700;
+  font-family: MontserratSemiBold;
   z-index: 1;
   color: #fff;
   background: #ff6d2f;

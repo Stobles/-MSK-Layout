@@ -3,19 +3,16 @@
 @import "mixin.scss";
 
 //Шрифты по умолчанию//
+
 @import "fonts.scss";
 
 $font-size: 16;
 
 $font-family-MontserratBlack: MontserratBlack;
 $font-family-MontserratRegular: MontserratRegular;
-$font-family-PoppinsLight: PoppinsLight;
-$font-family-PoppinsSemiBold: PoppinsSemiBold;
-$font-family-PoppinsBold: PoppinsBold;
-$font-family-LatoItalic: LatoItalic;
-$font-family-LatoRegular: LatoRegular;
-$font-family-DroidSerifItalic: DroidSerifItalic;
-$font-family-DroidSerif: DroidSerif;
+$font-family-MontserratSemiBold: MontserratSemiBold;
+$font-family-MontserratLight: MontserratLight;
+$font-family-MontserratMedium: MontserratMedium;
 
 //Переменные//
 $maxWidthContainer: 1120;

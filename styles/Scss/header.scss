@@ -23,7 +23,7 @@
             }
             &--title{
                 @include adaptiv-value('font-size',16,13,1);
-                font-weight: 700;
+                font-family: $font-family-MontserratSemiBold;
                 line-height: 18px;
             }
 
@@ -124,7 +124,7 @@
              
             @include adaptiv-value('padding-right',20,15,1);
             @include adaptiv-value('font-size',20,14,1);
-            font-weight: 500;
+            font-family: $font-family-MontserratMedium;
             & img{
                 @include adaptiv-value('width',56,35,1);
                 @include adaptiv-value('height',56,35,1);
@@ -203,7 +203,7 @@
         @include adaptiv-value('font-size',22,18,1);
         cursor: pointer;
         transition: color .3s ease;
-        font-weight: 400;
+        font-family: $font-family-MontserratRegular;
         @media(any-hover:hover){ 
             &:hover{
                 color: $orangeColor;
