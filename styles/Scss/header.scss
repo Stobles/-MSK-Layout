@@ -99,7 +99,7 @@
         }
         &--tel{
             @include adaptiv-value('font-size',25,16,1);
-            font-weight: 700;
+            font-family: $font-family-MontserratSemiBold;
             padding: 0px 0px 8px 0px;
             color: $maincolor;
         }

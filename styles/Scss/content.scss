@@ -21,6 +21,11 @@
     &__info{
         flex: 0 0 486px/1090px * 100%;
     }
+
+    &__builder{
+        transform: translateY(150px);
+        opacity: 0;
+    }
 }
 
 .info{
@@ -95,6 +100,11 @@
             margin:0px 0px 27px 0px;
             padding-right: 20px;
         }
+    }
+
+    &__anim{
+        transform: translateX(-200px);
+        opacity: 0;
     }
 
     &__text{
@@ -391,6 +401,11 @@
         }
     }
 
+    &__anim{
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
     &__item{
         display: flex;
         @media (min-width: $md2 + px) {
@@ -479,7 +494,7 @@
 
     }
 
-    .materials__body{
+    &__body{
         display: flex;
         position: relative;
         flex-direction: column;
@@ -489,6 +504,8 @@
             flex-direction: column;
             justify-content: center;
             padding: 20px 0px 20px 35px;
+            transform: translateX(-500px);
+            opacity: 0;
             @include adaptiv-value('padding-top',20,15,1);
             @include adaptiv-value('padding-bottom',20,15,1);
             @include adaptiv-value('padding-left',35,25,1);
@@ -501,8 +518,8 @@
             @media(min-width: $md3+px){
                 position: absolute;
                 max-width: 270px;
-            min-width: 250px;
-            max-height: 100px;
+                min-width: 250px;
+                max-height: 100px;
             }
             background-color: #fff;
             border-radius: 20px;
@@ -590,6 +607,8 @@
         background-color: #fff;
         box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2);
         border-radius: 15px;
+        transform: translateY(100%);
+        opacity: 0;
 
         &--img{
             padding: 0px 0px 168px/254px *100% 0px;
@@ -689,6 +708,8 @@
         box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2);
         border-radius: 15px;
         background-color: #fff;
+        transform: translateY(100%);
+        opacity: 0;
 
         &--info{
             display: flex;
@@ -754,6 +775,8 @@
         background-color: #fff;
         border-radius: 15px;
         padding: 28px 32px 28px 11px;
+        transform: translateX(-100%);
+        opacity: 0;
         box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2);
         @media(max-width: $md3+px){
             display: block;
@@ -813,7 +836,7 @@
 // Начало Necessary//
 
 .necessary{
-    background: url(../../img/Background/necessary_bg.webp);
+    background: url(../../img/Background/necessary_bg.png);
     color: #fff;
     background-size: cover;
     background-repeat: no-repeat;
@@ -851,12 +874,24 @@
             display: flex;
             flex-direction: column;
             max-width: 535px;
+
+            &--anim{
+                transform: translateX(100%);
+                opacity: 0;
+            }
         }
 
         &--img{
             padding: 0px 0px 0px 20px;
         }
 
+    }
+
+    &--list{
+        &--anim{
+            transform: translateX(100%);
+            opacity: 0;
+        }
     }
     &__title{
         color: #fff!important;
@@ -1031,7 +1066,6 @@
     .swiper-button-prev::after{
         color: #fff;
         font-size: 20px;
-        font-family: $font-family-MontserratMedium;
         padding: 0px 5px 0px 0px;
     }
 
@@ -1048,7 +1082,6 @@
     .swiper-button-next::after{
         color: #fff;
         font-size: 20px;
-        font-family: $font-family-MontserratMedium;
         padding: 0px 0px 0px 5px;
     }
 
@@ -1298,6 +1331,7 @@
         position: absolute;
         bottom: -17.7%;
         right: -14%;
+        transform: translateX(-100%);
 
         &--second{
             display: block;
@@ -1352,7 +1386,7 @@
 //Начало Hwork//
 
 .hwork{
-    background: url(../../img/Background/Hwork_bg.webp);
+    background: url(../../img/Background/Hwork_bg.png);
     background-repeat: no-repeat;
     background-size: cover;
     &__inner{
@@ -1383,7 +1417,9 @@
         flex-direction: column;
         align-items: center;
         max-width: 165px;
-        flex: 1 1 165px;      
+        flex: 1 1 165px;   
+        transform: translateY(100%);
+        opacity: 0;   
 
         &--img{
             padding: 0px 0px 15px 0px;
@@ -1416,6 +1452,7 @@
     }
 
     &__item{
+        cursor: pointer;
         padding: 18px 20px 18px 0px;
         @include adaptiv-value('padding-left',46,20,1);
         border-radius: 15px;

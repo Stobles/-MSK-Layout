@@ -8,7 +8,9 @@ new Swiper('.works__cards--container',{
     slidesPerGroup: 2,
 });
 
-new Swiper('.ourworks__container', {
+new Swiper('.ourworks__swiper--container', {
+    observer: true,
+    observeParents: true,
     navigation: {
         nextEl: '.ourworks__next',
         prevEl: '.ourworks__prev',
