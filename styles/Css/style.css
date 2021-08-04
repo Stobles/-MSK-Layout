@@ -3212,6 +3212,8 @@ body.lock {
 .form p {
   font-size: 18px;
   color: green;
+  margin: 0 auto;
+  text-align: center;
 }
 .form__button {
   font-size: 16px;

@@ -1124,7 +1124,7 @@
                 <div class="modal__callback--title modal__title">ЗАКАЗ <span>ЗВОНКА</span></div>
                 <div class="modal__callback--text">Оставьте свои контакты и мы свяжемся с вами в ближайшее время</div>
             </div>
-            <form for="" class="modal__callback--form form">
+            <form id="tel-form" action="https://formspree.io/f/xjvjapyp" method="POST" class="modal__callback--form form">
                 <div class="form__input--size">
                     <div class="form__input--img">
                         <img src="img/modal/cost/user.webp" alt="">
@@ -1145,6 +1145,7 @@
                     <input type="checkbox" class="checkbox" id = "checkbox">
                     <img src="img/modal/cost/check-mark.svg" alt="">
                 </div>
+                <p id="tel-form-status"></p>
             </form>
             
             <div class="modal__contacts">
@@ -1164,6 +1165,29 @@
         </div>
     </div>
 </div>
+
+<script>
+    var form = document.getElementById("tel-form");
+    
+    async function handleSubmit(event) {
+      event.preventDefault();
+      var status = document.getElementById("tel-form-status");
+      var data = new FormData(event.target);
+      fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+      }).then(response => {
+        status.innerHTML = "Спасибо за вашу заявку!";
+        form.reset()
+      }).catch(error => {
+        status.innerHTML = "Упс! У нас что-то пошло не так."
+      });
+    }
+    form.addEventListener("submit", handleSubmit)
+</script>
 
 <!-- Модальные Окна -->
 
