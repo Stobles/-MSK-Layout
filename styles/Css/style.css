@@ -3209,6 +3209,10 @@ body.lock {
 .form__input--img {
   margin: 0px 12px 0px 18px;
 }
+.form p {
+  font-size: 18px;
+  color: green;
+}
 .form__button {
   font-size: 16px;
   margin: 0px 0px 11px 0px;
